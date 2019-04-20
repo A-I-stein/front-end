@@ -1,0 +1,231 @@
+@charset "utf-8";
+@import url("fonts/stylesheet.css");
+
+/* CSS Document */
+
+#main{
+	margin-top: 72px;
+	max-width: 100%;
+	padding: 0;
+	text-transform: 
+}
+
+#main{
+	position: relative;
+	z-index: 3;
+	overflow-x: hidden;
+}
+.menuRotativo{
+	height: 767px;
+	max-height: 669.5px;
+	width: 100%;
+	background: #181c1f;
+	display: block;
+}
+.rotativo{
+	height: 670px;
+	width: 1030px;
+	max-height: 669.5px;
+	position: relative;
+	z-index: 3;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.imagemRotativo{
+	color: #fff;
+}
+.opcaoRotativo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 2000ms ease-out 0s;
+	width: 100%;
+	height: 100%;
+}
+.ativo{
+	z-index: 2;
+	opacity: 1;
+}
+.backgroundRotativo{
+	height: auto;
+	display: block;
+	width: 100%;
+	max-height: initial !important;
+	min-width: 1030px;
+	position: absolute;
+	bottom: 0;
+}
+.center-hv-container{
+	text-align: center;
+}
+.content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.home .rotativo.estaAtivo .opcaoRotativo .center-hv{
+	bottom: 60px;
+}
+.center-hv{
+	background: rgba(24,28,31,0.8);
+	border-radius: 0px;
+	height: 100px;
+	width: 100%
+	left: 0;
+	position: absolute;
+	padding: 0;
+	z-index: 10;
+}
+.center-hv-inner{
+	max-width: 1044px;
+	margin: 0 auto;
+	padding: 33px 30px;
+}
+.opcaoRotativo .center-hv .center-hv-inner hgroup {
+    float: left;
+    width: 700px;
+}
+
+.title{
+	letter-spacing: 0.02em;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.descriptor{
+	color: #8b939b;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	font-size: 20px;
+	margin-bottom: 10px;
+	display: none;
+	margin-top: -20px;
+}
+.super-tag{
+	font-size: 14px;
+	font-style: italic;
+	padding: 0;
+	display: none;
+}
+.divider{
+	background: #849199;
+	height: 1px;
+	width: 280px;
+	margin: 35px auto 18px;
+	display: none;
+}
+.butao {
+	color: white;
+    display: inline-block;
+    padding: 11px 24px;
+    border: 2px solid #3569A4;
+    background: #3569A4;
+    border-radius: 2px;
+    font-size: 11px;
+    transition: all 0.15s ease-out;
+}
+.butao-claro {
+    width: 180px;
+    height: 36px;
+    line-height: 34px;
+    padding: 0;
+    background: white;
+    border-color: white;
+    color: #3a3a3a;
+}
+.rotativoControles {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+}
+.rotativoControlesAntes{
+	background: #21272b;
+    height: 60px;
+    right: 50%;
+    margin-right: 495px;
+    position: absolute;
+    width: 100%;
+}
+.rotativoBotoes{
+	counter-reset: nav;
+    float: none;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 0;
+    width: 1030px;
+    margin-left: -515px;
+    padding: 0 20px !important;
+}
+.rotativoControlesDepois{
+	background: #21272b;
+    height: 60px;
+    left: 50%;
+    margin-left: 494px;
+    position: absolute;
+    width: 100%;
+}
+.rotativoBotao{
+	width: 33.3333%;
+	float: left;
+    position: relative;
+    display: block;
+    height: 60px;
+    cursor: pointer;
+    font-size: 12px;
+    border-bottom: 0;
+    background: #21272b;
+    transition: all .6s ease;
+}
+.rotativoBotao.ativo {
+    background-color: black;
+    background: rgba(24,28,31,0.8);
+    border-bottom-color: rgba(139,147,155,0.7);
+}
+.rotativoBotoes .title{
+	    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.rotativoBotao .title{
+    display: block;
+    padding: 15px 45px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: all .6s ease;
+    position: relative;
+    z-index: 2;
+}
+.rotativoBotao .progress {
+    position: absolute;
+    z-index: 5;
+    bottom: -5px;
+    left: 0;
+    height: 0;
+    width: 0;
+    transition: height .2s ease;
+}
+.rotativoBotao .bg-cell {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    background: #21272b 0 -120px no-repeat;
+    background-image: none;
+    transition: all 0.6s ease;
+}
+.rotativoBotao
