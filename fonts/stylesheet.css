@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Cinzel Regular';
+	src: url('Cinzel-Regular.ttf') format('truetype');
+		font-family: 'CormorantSC Medium';
+	src: url('CormorantSC-Medium.ttf') format('truetype');
+		font-family: 'MarcellusSC Regular';
+	src: url('MarcellusSC-Regular.ttf') format('truetype');
+		font-family: 'PlayfairDisplaySC Regular';
+	src: url('PlayfairDisplaySC-Regular.ttf') format('truetype');
+		font-family: 'AlegreyaSC Medium';
+	src: url('AlegreyaSC-Medium.ttf') format('truetype');
+
+}
