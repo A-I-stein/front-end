@@ -34,15 +34,15 @@ img{
 	vertical-align: middle;
 }
 
-footer { 
-	min-height: 25px; 
-	position: fixed; 
-	left: 0; 
-	right: 0; 
-	bottom: 0; 
+footer {
+	min-height: 25px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	background-color: #040404;
- 
-} 
+
+}
 h1, h2, h3, h4, h5, h6{
 	color: white;
 }
@@ -102,15 +102,15 @@ h1, h2, h3, h4, h5, h6{
 	width: 180px;
 	height: 44px;
 }
-#Rodape{ 
-	clear: both; 
-	text-align:right; 
+#Rodape{
+	clear: both;
+	text-align:right;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 20px;
-} 
-.textoRodape{ 
-	text-align: justify; 
-  	color: #FAFAFA; 
-	font-variant: small-caps; 
-} 
+}
+.textoRodape{
+	text-align: justify;
+  	color: #FAFAFA;
+	font-variant: small-caps;
+}
