@@ -43,7 +43,8 @@ footer {
 	background-color: #040404;
 
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, a, li, ul{
+	font-variant: small-caps;
 	color: white;
 }
 
@@ -60,6 +61,7 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 }
 .opcoesNavegaveis a:hover {
+	color: #eee;
 	text-decoration: underline;
 }
 .opcoesImportantes{
