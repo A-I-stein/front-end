@@ -117,12 +117,28 @@ h1, h2, h3, h4, h5, h6, a, li, ul{
 	width: 180px;
 	height: 44px;
 }
-#Rodape{
-	clear: both;
-	text-align:right;
+.oculta {
+  display: none;
+}
+#fotoPerfil{
+	float: right;
+	margin: 0;
+	padding: 0;
+	padding-left: : 15px;
+}
+#fotoPerfil img{
+	width: 40px;
+	height: 40px;
+}
+#rodape{
+	z-index: 2000;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 20px;
+	text-align:right;
+}
+#Rodape-Conteudo{
+	clear: both;
 }
 .textoRodape{
 	text-align: justify;
