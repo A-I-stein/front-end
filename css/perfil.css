@@ -1,0 +1,16 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.dados-esquerda{
+	float: left;
+	margin-left: 0;
+	margin-right: 40%;	
+}
+.dados-direita{
+	float: right;
+	margin-right: 0;
+	margin-left: 40%;
+}
