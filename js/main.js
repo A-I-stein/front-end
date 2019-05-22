@@ -1,7 +1,8 @@
 /*  Variaveis */
 
-var rotativoImagem = document.querySelectorAll(".rotativoImagem");
+var rotativoImagem = document.querySelectorAll(".imagemRotativo");
 var rotativoBotao = document.querySelectorAll(".rotativoBotao");
+
 
 //-------------------------------------------------------------------------//
 
@@ -9,7 +10,6 @@ var rotativoBotao = document.querySelectorAll(".rotativoBotao");
 
 for (var i = 0; i < rotativoBotao.length; i++) {
   rotativoBotao[i].addEventListener("click", function(){
-    console.log(event.currentTarget);
     controleSlideInicial(event.currentTarget);
   });
 }
@@ -22,6 +22,7 @@ for (var i = 0; i < rotativoBotao.length; i++) {
 
 
 function controleSlideInicial(n) {
+  console.log(n);
   for (var i = 0; i < rotativoBotao.length; i++) {
     if (rotativoBotao[i] == n) {
       rotativoImagem[i].classList.add("ativo");
