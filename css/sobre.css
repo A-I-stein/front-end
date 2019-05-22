@@ -3,11 +3,11 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+
 }
 section {
   min-width: 100vw;
   height: 100%;
-  transition: all 1s;
 }
 #logoSobreImagem{
   position: absolute;
@@ -17,16 +17,15 @@ section {
   left: 27vw;
 }
 #imagemSobreAIStein{
+  position: relative;
   height: 40vh;
-    width: 52vw;
-    margin-right: 10vw;
-    padding-right: 4vw;
-    margin-top: 13vh;
-    float: right;
+  width: 35vw;
+  left: 33vw;
+  margin-top: 13vh;
 }
 #imagemSobreArthur{
-  height: 38vh;
-  width: 40vw;
+  height: 43vh;
+  width: 30vw;
   margin-right: 15vw;
   padding-right: 0vw;
   margin-top: 15vh;
@@ -34,16 +33,16 @@ section {
   border-radius: 25vh;
 }
 #imagemSobreGabriel{
-  height: 38vh;
-  width: 40vw;
+  height: 43vh;
+  width: 30vw;
   margin-left: 15vw;
   margin-top: 15vh;
   float: left;
   border-radius: 25vh;
 }
 #imagemSobreHeitor{
-  height: 38vh;
-  width: 40vw;
+  height: 43vh;
+  width: 30vw;
   margin-right: 15vw;
   padding-right: 0vw;
   margin-top: 15vh;
@@ -51,8 +50,8 @@ section {
   border-radius: 25vh;
 }
 #imagemSobreItalo{
-  height: 38vh;
-  width: 40vw;
+  height: 43vh;
+  width: 30vw;
   margin-left: 15vw;
   margin-top: 15vh;
   float: left;
@@ -66,6 +65,7 @@ section {
 #sobreAIStein{
   border-top-style: groove;
   border-color: grey;
+  background-color: white;
 }
 #sobreArthur{
   box-shadow: 1em 0em 1em black;
@@ -85,25 +85,38 @@ section {
   background-color: #e4e2e2;
   }
 
+.conteudoRowBottom{
+  width: 70vw;
+  position: relative;
+  left: 16vw;
+  padding-top: 12vh;
+}
 .conteudoRowLeft{
-  float: left;
-  margin-top: 19vh;
-  margin-left: 27vw;
-  width: 66vw;
+  width: 24vw;
+  position: relative;
+  left: 16vw;
+  padding-top: 25vh;
 }
 .conteudoRowRight{
-  float: Right;
-  margin-top: 19vh;
-  margin-right: 27vw;
   width: 66vw;
+  position: relative;
+  right: -17vw;
+  padding-top: 21vh;
 }
 .AISteisnConteudo{
   min-width: 100vw;
   height: 100%;
 }
 .conteudoSobre{
+  top: 80vh;
   display: block;
   min-width: 100vw;
   height: 100%;
   transition: all 1s;
+  position: relative;
+  z-index: 1;
+}
+.imagemPrincipal{
+  position: fixed;
+  z-index: 1;
 }
