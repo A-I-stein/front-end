@@ -3,7 +3,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-
+}
+body{
+  overflow-x: hidden;
 }
 section {
   min-width: 100vw;
@@ -11,21 +13,21 @@ section {
 }
 #logoSobreImagem{
   position: absolute;
-  height: 50vh;
-  width: 50vw;
-  top: 22vh;
-  left: 27vw;
+  height: 40vh;
+  width: 73vh;
+  top: 16vh;
+  left: 28vw;
 }
 #imagemSobreAIStein{
   position: relative;
   height: 40vh;
-  width: 35vw;
-  left: 33vw;
+  width: 47vh;
+  left: 36vw;
   margin-top: 13vh;
 }
 #imagemSobreArthur{
-  height: 43vh;
-  width: 30vw;
+  height: 40vh;
+  width: 40vh;
   margin-right: 15vw;
   padding-right: 0vw;
   margin-top: 15vh;
@@ -33,16 +35,16 @@ section {
   border-radius: 25vh;
 }
 #imagemSobreGabriel{
-  height: 43vh;
-  width: 30vw;
+  height: 40vh;
+  width: 40vh;
   margin-left: 15vw;
   margin-top: 15vh;
   float: left;
   border-radius: 25vh;
 }
 #imagemSobreHeitor{
-  height: 43vh;
-  width: 30vw;
+  height: 40vh;
+  width: 40vh;
   margin-right: 15vw;
   padding-right: 0vw;
   margin-top: 15vh;
@@ -50,8 +52,8 @@ section {
   border-radius: 25vh;
 }
 #imagemSobreItalo{
-  height: 43vh;
-  width: 30vw;
+  height: 40vh;
+  width: 40vh;
   margin-left: 15vw;
   margin-top: 15vh;
   float: left;
@@ -59,30 +61,32 @@ section {
 }
 #sobreImagem{
   box-shadow: 0 0 1em black;
-  background-color: #e4e2e2;
-  height: 80vh;
+  background-color: #6c84afba;
+  height: 88vh;
 }
 #sobreAIStein{
   border-top-style: groove;
   border-color: grey;
-  background-color: white;
+  background-color: #f3f2f1;
 }
 #sobreArthur{
   box-shadow: 1em 0em 1em black;
-  background-color: #e4e2e2;
-  height:
+  background-color: #658394;
+  margin-bottom: 51vh;
   }
 #sobreGabriel{
   box-shadow: inset 0em 0em 1em 0em black;
-  background-color: #e4e2e2;
+  background-color: #658394;
+  margin-bottom: 51vh;
   }
 #sobreHeitor{
   box-shadow: 0 0 1em black;
-  background-color: #e4e2e2;
+  background-color: #658394;
+  margin-bottom: 51vh;
   }
 #sobreItalo{
   box-shadow: inset 0em 0em 1em 0em black;
-  background-color: #e4e2e2;
+  background-color: #658394;
   }
 
 .conteudoRowBottom{
@@ -117,6 +121,7 @@ section {
   z-index: 1;
 }
 .imagemPrincipal{
+  top: 7vh;
   position: fixed;
   z-index: 1;
 }
