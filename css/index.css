@@ -3,6 +3,7 @@
 
 /* CSS Document */
 
+
 #main{
 	margin-top: 72px;
 	max-width: 100%;
@@ -24,7 +25,7 @@
 }
 .rotativo{
 	height: 670px;
-	width: 1030px;
+	width: 100%;
 	max-height: 669.5px;
 	position: relative;
 	z-index: 3;
@@ -33,6 +34,7 @@
 }
 .imagemRotativo{
 	color: #fff;
+	vertical-align: top;
 }
 .opcaoRotativo{
 	position: absolute;
@@ -59,6 +61,9 @@
 }
 .center-hv-container{
 	text-align: center;
+	width: 100%;
+	left: 0;
+	right: 0;
 }
 .content{
 	position: absolute;
@@ -74,7 +79,7 @@
 	background: rgba(24,28,31,0.8);
 	border-radius: 0px;
 	height: 100px;
-	width: 100%
+	width: 100%;
 	left: 0;
 	position: absolute;
 	padding: 0;
@@ -85,17 +90,28 @@
 	margin: 0 auto;
 	padding: 33px 30px;
 }
-.opcaoRotativo .center-hv .center-hv-inner hgroup {
+.center-hv-inner hgroup {
     float: left;
-    width: 700px;
+    width: 432px;
 }
 
 .title{
+	text-decoration: none;
 	letter-spacing: 0.02em;
 	font-size: 30px;
 	font-weight: 700;
 	text-align: left;
 	margin-left: 30px;
+}
+
+.title a{
+	color: #fff;
+	font-variant: small-caps;
+}
+
+.title a:hover {
+	text-decoration: underline;
+	color: #eee;
 }
 
 .descriptor{
@@ -138,6 +154,10 @@
     background: white;
     border-color: white;
     color: #3a3a3a;
+}
+.butao-claro:hover {
+	text-decoration: underline;
+    color: #a3a3a3;
 }
 .rotativoControles {
     position: absolute;
@@ -228,4 +248,86 @@
     background-image: none;
     transition: all 0.6s ease;
 }
-.rotativoBotao
+.slogan-bloco{
+	width: 100%;
+	height: 66px;
+	padding-top: 70px;
+	background: #ffffff; 
+	background: -moz-linear-gradient(top,  #c1c1c1 0%, #ffffff 64%); 
+	background: -webkit-linear-gradient(top,  #c1c1c1 0%,#ffffff 64%); 
+	background: linear-gradient(to bottom,  #c1c1c1 0%,#ffffff 64%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1c1c1', endColorstr='#ffffff',GradientType=0 );
+}
+.slogan{
+	margin-top: 0;
+	margin: 0 auto 0;
+    max-width: 930px;
+    font-family: Georgia,serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    line-height: 30px;
+    color: #707d85;
+}
+.bloco-noticias{
+	padding-top: 100px;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 100px;
+}
+.noticias{   
+	margin-right: auto;
+    margin-left: auto;
+	overflow: visible;
+    text-align: center;
+}
+
+.bloco-noticia{
+	width: 310px;
+	float: left;
+	min-height: 1px;
+	margin-left: 30px;
+	border-style: solid;
+  	border-width: 4px;
+  	border-color: #eee;
+}
+
+.noticia{
+	padding: 24px;
+	padding-bottom: 48px;
+	min-height: 234px;
+	position: relative;
+}
+.noticia-imagem{
+	margin-bottom: 20px;
+}
+.noticia-imagem a img{
+	vertical-align: middle;
+	height: 116px;
+	width: 256px;
+}
+.noticia-titulo{
+	margin-bottom: 10px;
+}
+.noticia-titulo h3, .noticia-titulo h3 a{
+	letter-spacing: 0.02em;
+	color: black;
+	text-transform:uppercase;
+}
+.noticia-titulo h3 a:hover{
+	color: black;
+}
+.noticia-link{
+	position: absolute;
+	bottom: 2px;
+}
+.noticia-link a{
+	color: #4d76bb;
+}
+.noticia-link a:hover{
+	color: black;
+}

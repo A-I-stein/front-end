@@ -1,5 +1,18 @@
 @charset "utf-8";
-@import url("fonts/stylesheet.css");
+/* @font-face {
+	font-family: 'Cinzel Regular';
+	src: url('../fonts/Cinzel-Regular.ttf') format('truetype');
+		font-family: 'CormorantSC Medium';
+	src: url('../fonts/CormorantSC-Medium.ttf') format('truetype');
+		font-family: 'MarcellusSC Regular';
+	src: url('../fonts/MarcellusSC-Regular.ttf') format('truetype');
+		font-family: 'PlayfairDisplaySC Regular';
+	src: url('../fonts/PlayfairDisplaySC-Regular.ttf') format('truetype');
+		font-family: 'AlegreyaSC Medium';
+	src: url('../fonts/AlegreyaSC-Medium.ttf') format('truetype');
+}
+*/
+@import "fonts/stylesheet.css";
 
 /* CSS Document */
 
@@ -34,16 +47,17 @@ img{
 	vertical-align: middle;
 }
 
-footer { 
-	min-height: 25px; 
-	position: fixed; 
-	left: 0; 
-	right: 0; 
-	bottom: 0; 
+footer {
+	min-height: 25px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	background-color: #040404;
- 
-} 
-h1, h2, h3, h4, h5, h6{
+
+}
+h1, h2, h3, h4, h5, h6, a, li, ul{
+	font-variant: small-caps;
 	color: white;
 }
 
@@ -60,6 +74,7 @@ h1, h2, h3, h4, h5, h6{
 	display: block;
 }
 .opcoesNavegaveis a:hover {
+	color: #eee;
 	text-decoration: underline;
 }
 .opcoesImportantes{
@@ -102,15 +117,31 @@ h1, h2, h3, h4, h5, h6{
 	width: 180px;
 	height: 44px;
 }
-#Rodape{ 
-	clear: both; 
-	text-align:right; 
+.oculta {
+  display: none;
+}
+#fotoPerfil{
+	float: right;
+	margin: 0;
+	padding: 0;
+	padding-left: : 15px;
+}
+#fotoPerfil img{
+	width: 40px;
+	height: 40px;
+}
+#rodape{
+	z-index: 2000;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 20px;
-} 
-.textoRodape{ 
-	text-align: justify; 
-  	color: #FAFAFA; 
-	font-variant: small-caps; 
-} 
+	text-align:right;
+}
+#Rodape-Conteudo{
+	clear: both;
+}
+.textoRodape{
+	text-align: justify;
+  	color: #FAFAFA;
+	font-variant: small-caps;
+}
