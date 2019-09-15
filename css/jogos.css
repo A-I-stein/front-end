@@ -1,0 +1,40 @@
+#nomeJogo{
+  border: solid black 1px;
+}
+
+#pesquisarJogo{
+  border: solid black 1px;
+}
+
+#telaJogo{
+  border: solid black 1px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.sol{
+  border: solid black 1px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.planeta{
+  border: solid black 1px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+#Fisica{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
