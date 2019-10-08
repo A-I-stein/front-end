@@ -64,22 +64,3 @@ class Request {
     }
 
 };
-
-
-/**
-* @author Arthur
-*/
-
-function checkStatus(){
-   let param = "requisicao=checkStatus&tipo=0";
-   Request.get(param)
-          .then(function(res){
-            console.log(res);
-          })
-          .catch(function(error){
-            console.log(error);
-          });
-}
-
-let btn1 = document.querySelector('#btn1');
-btn1.addEventListener("click", checkStatus);
