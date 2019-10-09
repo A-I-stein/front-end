@@ -2,7 +2,7 @@
 window.onload = function(e){
   function addOrbita(planeta, solCSS) {
   let distancia = distanciaCentro(planeta, solCSS);
-  //console.log(distancia);
+  console.log(distancia);
     if (solCSS === 0) {
       planeta.style.cx = solCSS + "px";
       planeta.style.cy = solCSS + "px";
@@ -74,7 +74,7 @@ window.onload = function(e){
     planetas[i].style.cursor = "pointer";
     orbita[i].style.cursor = "pointer";
     orbita[i].addEventListener('mouseover', function(e) {
-      console.log(e.path[0].style.stroke);
+      //console.log(e.path[0].style.stroke);
       if (e.path[0].style.stroke == "rgb(0, 147, 255)") {
         e.path[0].style.stroke = "rgba(0, 147, 255, 0.1)";
       }else if (e.path[0].style.stroke == "rgba(0, 147, 255, 0.1)" || e.path[0].style.stroke == "" ){
@@ -82,7 +82,7 @@ window.onload = function(e){
       }
     });
     orbita[i].addEventListener('mouseout', function(e) {
-      console.log(e.path[0].style.stroke);
+      //console.log(e.path[0].style.stroke);
       if (e.path[0].style.stroke == "rgb(0, 147, 255)") {
         e.path[0].style.stroke = "rgba(0, 147, 255, 0.1)";
       }else if (e.path[0].style.stroke == "rgba(0, 147, 255, 0.1)" || e.path[0].style.stroke == "" ){
