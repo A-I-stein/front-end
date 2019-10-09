@@ -1,0 +1,31 @@
+.conteudo{
+  display: list-item;
+  position: relative;
+  top: 5em;
+  height: 100%;
+  width: 98%;
+  left: 0.6em;
+}
+.tag{
+  position: relative;
+  left: 1vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.tagList,
+.conteudoTopico{
+  border: ridge;
+  border-radius: 10px;
+  border-color: lightgrey;
+}
+.botoes{
+  position: fixed;
+    bottom: 1em;
+    left: 40vw;
+}
+input[name='pesquisar']{
+  border-radius: 1em;
+}
+button[type='button']{
+  border-radius: 12px;
+}

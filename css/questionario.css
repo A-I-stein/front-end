@@ -1,0 +1,20 @@
+.conteudo{
+  position: relative;
+  top: 4em;
+  height: 100%;
+  width: 98%;
+  left: 0.6em;
+}
+.respostas{
+  display: table-caption;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+.botoes{
+  position: fixed;
+    bottom: 1em;
+    left: 40vw;
+}
+input{
+  border-radius: 12px;
+}

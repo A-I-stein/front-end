@@ -2,41 +2,102 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=1024" />
+    <title>cquestionario.html</title>
+    <link rel="icon" href="imgs/icone.png" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/questionario.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+  	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+  	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+  	<link href="css/bootstrap-4.2.1.css" rel="stylesheet" type="text/css">
+  	<style media="screen">
+  		@import "css/fonts/stylesheet.css";
+  	</style>
   </head>
   <body>
-
-    <h1>Questionario</h1>
-
-    <div class="perguntas">
-
-      <div class="pergunta1">
-        <input type="text" size="100px" name="pergunta1" value="" placeholder="Pergunta 1" readonly> <br>
-        <ul>
-          <li>
-            <input type="radio" name="Resposta1" value="">
-            <span>Resposta</span>
-          </li>
-          <li>
-            <input type="radio" name="Resposta1" value="">
-            <span>Resposta</span>
-          </li>
-          <li>
-            <input type="radio" name="Resposta1" value="">
-            <span>Resposta</span>
-          </li>
-          <li>
-            <input type="radio" name="Resposta1" value="">
-            <span>Resposta</span>
-          </li>
-        </ul>
+    <header id="cabecalho" role="banner" class="isVisible">
+      <div id="cabecalhoPrincipal">
+        <div id="navegation">
+          <nav class="mainNav">
+            <div class="opcoes">
+              <a href="index.html" title="A.I.STEIN" id="logo" class="opcoesNavegaveis">
+                <img src="imgs/Logo-escrito-180-22.png" alt="A.I.STEIN">
+              </a>
+              <ul class="opcoesNavegaveis opcoesImportantes">
+                <li  id="jogos">
+                  <a href="jogos.html" class="opcaoImportante">Jogos </a>
+                </li>
+                <li id="curiosidades">
+                  <a href="curiosidades.html" class="opcaoImportante">Curiosidades </a>
+                </li>
+                <li id="questionario">
+                  <a href="questionario.html" class="opcaoImportante">Questionário </a>
+                </li>
+                <li  id="noticias">
+                  <a href="noticias.hmtl" class="opcaoImportante">Notícias </a>
+                </li>
+                <li id="forum">
+                  <a href="forum.html" class="opcaoImportante">Fórum </a>
+                </li>
+              </ul>
+              <ul class="opcoesNavegaveis opcoesSecundarias">
+                <li id="fac">
+                  <a href="/fac" class="opcaoSecundaria">Com Problemas? </a>
+                </li>
+                <li id="autores">
+                  <a href="sobre.html" class="opcaoSecundaria">Quem somos nós? </a>
+                </li>
+                <li id="contato">
+                  <a href="/contato" class="opcaoSecundaria">Contacte-nos </a>
+                </li>
+                <li id="logar">
+                  <a href="/logar" class="opcaoSecundaria oculto">Login </a>
+                </li>
+                <li id="cadastrar">
+                  <a href="/cadastrar" class="opcaoSecundaria oculto">Cadastre-se </a>
+                </li>
+              </ul>
+              <a href="perfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
+                <img src="imgs/usuario.png">
+              </a>
+            </div>
+          </nav>
+        </div>
       </div>
+    </header>
+    <section class="conteudo">
+      <h1>Questionario</h1>
+      <section class="perguntas">
+        <div class="pergunta">
+          <input type="text" size="100px" name="pergunta1" value="" placeholder="Pergunta 1" readonly> <br>
+          <ul class="respostas">
+            <li>
+              <input type="radio" name="Resposta1" value="">
+              <span>Resposta</span>
+            </li>
+            <li>
+              <input type="radio" name="Resposta1" value="">
+              <span>Resposta</span>
+            </li>
+            <li>
+              <input type="radio" name="Resposta1" value="">
+              <span>Resposta</span>
+            </li>
+            <li>
+              <input type="radio" name="Resposta1" value="">
+              <span>Resposta</span>
+            </li>
+          </ul>
+        </div>
+        <section class="botoes">
+          <input type="submit" name="finalizar" value="Finalizar">
+          <input type="reset" name="cancelar" value="Cancelar">
+        </section>
 
-      <input type="submit" name="finalizar" value="Finalizar">
-      <input type="reset" name="cancelar" value="Cancelar">
-
-
-    </div>
+      </div>
+      </section>
 
   </body>
 </html>

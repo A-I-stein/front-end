@@ -2,51 +2,109 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <style>
-      .tagList, .conteudoTopico{
-        border: 1px black solid;
-      }
-    </style>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=1024" />
+    <title>curiosidades.html</title>
+    <link rel="icon" href="imgs/icone.png" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/curiosidades.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+  	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+  	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+  	<link href="css/bootstrap-4.2.1.css" rel="stylesheet" type="text/css">
+  	<style media="screen">
+  		@import "css/fonts/stylesheet.css";
+  	</style>
   </head>
   <body>
-    <h1>Curiosidades</h1>
-
-    <div class="tagList">
-      <label class="tag">Tag 1</label>
-      <label class="tag">Tag 2</label>
-      <label class="tag">Tag 3</label>
-      <label class="tag">Tag 4</label>
-      <label class="tag">Tag 5</label>
-      <label class="tag">Tag 6</label>
-      <label class="tag">Tag 7</label>
-    </div>
-
-    <h2>Curiosidade</h2>
-    <input type="text" name="pesquisar" value="" placeholder="Pesquisar">
-
-    <div class="topicosCuriosidades">
-
-      <div class="topico">
-        <h3>Topico 1</h3>
-        <div class="conteudoTopico">
-          Conteudo do Topico
-        </div>
+    <header id="cabecalho" role="banner" class="isVisible">
+  		<div id="cabecalhoPrincipal">
+  			<div id="navegation">
+  				<nav class="mainNav">
+  					<div class="opcoes">
+  						<a href="index.html" title="A.I.STEIN" id="logo" class="opcoesNavegaveis">
+  							<img src="imgs/Logo-escrito-180-22.png" alt="A.I.STEIN">
+  						</a>
+  						<ul class="opcoesNavegaveis opcoesImportantes">
+  							<li  id="jogos">
+  								<a href="jogos.html" class="opcaoImportante">Jogos </a>
+  							</li>
+  							<li id="curiosidades">
+  								<a href="curiosidades.html" class="opcaoImportante">Curiosidades </a>
+  							</li>
+  							<li id="questionario">
+  								<a href="questionario.html" class="opcaoImportante">Questionário </a>
+  							</li>
+  							<li  id="noticias">
+  								<a href="noticias.hmtl" class="opcaoImportante">Notícias </a>
+  							</li>
+  							<li id="forum">
+  								<a href="forum.html" class="opcaoImportante">Fórum </a>
+  							</li>
+  						</ul>
+  						<ul class="opcoesNavegaveis opcoesSecundarias">
+  							<li id="fac">
+  								<a href="/fac" class="opcaoSecundaria">Com Problemas? </a>
+  							</li>
+  							<li id="autores">
+  								<a href="sobre.html" class="opcaoSecundaria">Quem somos nós? </a>
+  							</li>
+  							<li id="contato">
+  								<a href="/contato" class="opcaoSecundaria">Contacte-nos </a>
+  							</li>
+  							<li id="logar">
+  								<a href="/logar" class="opcaoSecundaria oculto">Login </a>
+  							</li>
+  							<li id="cadastrar">
+  								<a href="/cadastrar" class="opcaoSecundaria oculto">Cadastre-se </a>
+  							</li>
+  						</ul>
+  						<a href="perfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
+  							<img src="imgs/usuario.png">
+  						</a>
+  					</div>
+  				</nav>
+  			</div>
+  		</div>
+  	</header>
+    <section class="conteudo">
+      <div class="tagList">
+        <label class="tag"><a href="#">Tag 1</a></label>
+        <label class="tag"><a href="#">Tag 2</a></label>
+        <label class="tag"><a href="#">Tag 3</a></label>
+        <label class="tag"><a href="#">tag 4</a></label>
+        <label class="tag"><a href="#">Tag 5</a></label>
+        <label class="tag"><a href="#">Tag 6</a></label>
+        <label class="tag"><a href="#">Tag 7</a></label>
       </div>
 
-      <div class="topico">
-        <h3>Topico N</h3>
-        <div class="conteudoTopico">
-          Conteudo do Topico
+      <h2>Curiosidade</h2>
+      <input type="text" name="pesquisar" value="" placeholder="Pesquisar">
+
+      <section class="topicosCuriosidades">
+
+        <div class="topico">
+          <h3>Topico 1</h3>
+          <div class="conteudoTopico">
+            Conteudo do Topico
+          </div>
         </div>
-      </div>
 
-    </div>
+        <div class="topico">
+          <h3>Topico N</h3>
+          <div class="conteudoTopico">
+            Conteudo do Topico
+          </div>
+        </div>
 
-    <br><br><br>
+      </section>
 
-    <button type="button" name="anterior">Anterior</button>
-    <label> N/N Pagina</label>
-    <button type="button" name="proximo">Proximo</button>
+
+    </section>
+    <section class="botoes">
+      <button type="button" name="anterior">Anterior</button>
+      <label> N/N Pagina</label>
+      <button type="button" name="proximo">Proximo</button>
+    </section>
   </body>
 </html>
