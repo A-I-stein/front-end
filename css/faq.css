@@ -1,0 +1,39 @@
+.conteudo{
+  position: relative;
+  top: 6em;
+/*  display: flex;*/
+}
+.generos{
+  border-style: groove;
+  float: left;
+  height: 33em;
+  margin-left: 0.1em;
+}
+.generos > ul{
+  padding-left: 0.5em;
+    padding-right: 1.5em;
+}
+li[name='genero']{
+  color: black;
+  display: grid;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+li[name='genero']:hover{
+  color: blue;
+  cursor: pointer;
+}
+span[name='genero'] > h2{
+  text-decoration: underline;
+}
+.perguntas{
+  padding-left: 8em;
+}
+.perguntaResposta > h6{
+  font-style: italic;
+}
+span[name='separacao']{
+  display: flex;
+  width: 80vw;
+  border-style: groove;
+}

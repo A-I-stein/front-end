@@ -44,7 +44,7 @@
   						</ul>
   						<ul class="opcoesNavegaveis opcoesSecundarias">
   							<li id="fac">
-  								<a href="/fac" class="opcaoSecundaria">Com Problemas? </a>
+  								<a href="faq.html" class="opcaoSecundaria">Com Problemas? </a>
   							</li>
   							<li id="autores">
   								<a href="sobre.html" class="opcaoSecundaria">Quem somos nós? </a>
@@ -56,7 +56,7 @@
   								<a href="/logar" class="opcaoSecundaria oculto">Login </a>
   							</li>
   							<li id="cadastrar">
-  								<a href="/cadastrar" class="opcaoSecundaria oculto">Cadastre-se </a>
+  								<a href="cadastro.html" class="opcaoSecundaria oculto">Cadastre-se </a>
   							</li>
   						</ul>
   						<a href="perfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
@@ -79,21 +79,23 @@
       </div>
 
       <h2>Curiosidade</h2>
-      <input type="text" name="pesquisar" value="" placeholder="Pesquisar">
+      <section class="pesquisa">
+        <input type="text" name="pesquisar" value="" placeholder="Pesquisar">
+        <button type="button" name="pesquisarTopico">Pesquisar</button>
+      </section>
 
       <section class="topicosCuriosidades">
-
         <div class="topico">
           <h3>Topico 1</h3>
           <div class="conteudoTopico">
-            Conteudo do Topico
+              || Conteudo do Topico ||
           </div>
         </div>
 
         <div class="topico">
           <h3>Topico N</h3>
           <div class="conteudoTopico">
-            Conteudo do Topico
+            ||  Conteudo do Topico  ||
           </div>
         </div>
 
@@ -101,10 +103,20 @@
 
 
     </section>
-    <section class="botoes">
-      <button type="button" name="anterior">Anterior</button>
-      <label> N/N Pagina</label>
-      <button type="button" name="proximo">Proximo</button>
+    <section class="paginas">
+      <span class="botao" name="anterior">
+        <i>
+        </i>
+       </span>
+      <label name='pagina'>
+        <span name='paginaAtual'>N</span>
+        /
+        <span name='totalPaginas'>N</span>
+       </label>
+      <span class="botao" name="proximo">
+        <i>
+        </i>
+       </span>
     </section>
   </body>
 </html>

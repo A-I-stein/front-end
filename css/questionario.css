@@ -12,9 +12,63 @@
 }
 .botoes{
   position: fixed;
-    bottom: 1em;
-    left: 40vw;
+  bottom: 1em;
+  right: 10vw;
 }
 input{
   border-radius: 12px;
+}
+input[name='finalizar']{
+  box-shadow: inset -3px -3px 3px -1px #ffffff;
+  background-color: #6c84afba;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  text-indent: 0;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  height: 33px;
+  line-height: 0px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 0px #ffffff;
+}
+input[name='finalizar']:hover {
+	background-color:#dfdfdf;
+}
+input[name='finalizar']:active {
+	position:relative;
+	top:1px;
+}
+input[name='cancelar']{
+  box-shadow: inset -3px -3px 3px -1px #ffffff;
+  background-color: #6c84afba;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  text-indent: 0;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  height: 33px;
+  line-height: 0px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 0px #ffffff;
+}
+input[name='cancelar']:hover {
+	background-color:#dfdfdf;
+}
+input[name='cancelar']:active {
+	position:relative;
+	top:1px;
 }
