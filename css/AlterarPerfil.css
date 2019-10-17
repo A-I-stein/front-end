@@ -1,0 +1,17 @@
+#leftPanel{
+background-color:#0079ac;
+color:#fff;
+text-align: center;
+}
+
+#rightPanel{
+    min-height:415px;
+}
+
+/* Credit to bootsnipp.com for the css for the color graph */
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+} 
