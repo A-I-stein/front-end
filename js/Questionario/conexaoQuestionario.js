@@ -6,7 +6,7 @@ function buscarQuestionario(materia){
               "questionarioJSON="+questionarioJSON
                 ).then(function(resultado) {
                 resultado = transformaEmQuestionario(resultado);
-                adicionaQuestionario(resultado);
+                imprimeQuestionario(resultado);
               });
 }
 

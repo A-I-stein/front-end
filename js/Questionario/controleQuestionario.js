@@ -1,0 +1,3 @@
+imprimeQuestionario(questionario){
+/*codigo*/  
+}
