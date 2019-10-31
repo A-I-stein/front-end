@@ -1,0 +1,18 @@
+#leftPanel{
+background-color:#0079ac;
+color:#fff;
+text-align: center;
+}
+
+#rightPanel{
+    min-height:415px;
+}
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+}
+#loginPanel{
+text-align: center;
+}
