@@ -23,7 +23,7 @@ AIstein.com.br
 ## Authors
 
 * **Arthur Marcolino** - *Initial work* - [AIStein](https://github.com/marcolarthur)
-* **Gabriel Cruz** - *Initial work* - [AIStein](https://github.com/marcolarthur)
+* **Gabriel Cruz** - *Initial work* - [AIStein](https://github.com/gabriel7g)
 * **Heitor** - *Initial work* - [AIStein](https://github.com/marcolarthur)
 * **Italo** - *Initial work* - [AIStein](https://github.com/marcolarthur)
 
