@@ -1,5 +1,5 @@
 .conteudo{
-  display: list-item;
+  display: grid;
   position: relative;
   top: 6em;
   height: 100%;
@@ -29,7 +29,8 @@
 input[name='pesquisar']{
   border-radius: 1em;
 }
-button[name='pesquisarTopico']{
+button[name='pesquisarTopico'],
+button[name='voltarExibirConteudo']{
   box-shadow: inset -3px -3px 3px -1px #ffffff;
   background-color: #6c84afba;
   border-top-left-radius: 7px;
@@ -50,13 +51,19 @@ button[name='pesquisarTopico']{
   text-shadow: 2px 2px 0px #ffffff;
   float: right;
 }
-button[name='pesquisarTopico']:hover {
+button[name='voltarExibirConteudo']{
+  float: left;
+}
+button[name='pesquisarTopico']:hover,
+button[name='voltarExibirConteudo']:hover {
 	background-color:#dfdfdf;
 }
-button[name='pesquisarTopico']:active {
+button[name='pesquisarTopico']:active,
+button[name='voltarExibirConteudo']:active {
 	position:relative;
 	top:1px;
 }
+
 
 span[name='anterior']{
   background: #6c84afba;
@@ -112,4 +119,20 @@ label[name='pagina']{
   width: fit-content;
   display: flex;
   margin-top: 8em;
+}
+
+.conteudoVisivel{
+  display: none;
+  position: relative;
+  top: 2em;
+  height: 100%;
+  width: 98%;
+  left: 0.6em;
+
+}
+#conteudoTopicoVisivel{
+  height: 7em;
+  border: ridge;
+  border-radius: 10px;
+  border-color: lightgrey;
 }

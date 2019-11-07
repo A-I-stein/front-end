@@ -11,7 +11,6 @@ function buscarTodosConteudos(){
               });
 }
 
-
 function buscarConteudo(topico){
   let conteudoJSON = encapsularBuscarConteudo(topico);
   Request.get(SERVER_URL+
@@ -20,6 +19,17 @@ function buscarConteudo(topico){
                 ).then(function(resultado) {
                       resultado = transformaEmConteudo(resultado);
                       imprimeConteudo(resultado);
+              });
+}
+
+function buscarConteudoCodigo(codigo){
+  let conteudoJSON = encapsularBuscarConteudoCodigo(codigo);
+  Request.get(SERVER_URL+
+              "tipo="+conteudoJSON+
+              "&req="+"codigo"
+                ).then(function(resultado) {
+                      resultado = transformaEmConteudo(resultado);
+                      mostraConteudo(resultado);
               });
 }
 

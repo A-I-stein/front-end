@@ -1,14 +1,20 @@
 
 /**
- * Envia dados para o Servlet para Compra de máquinas.
- * @param {int} codQuestionario inteiro representando o ID do questionario;
- * @param {String} materia representando a materia do questionario;
+ * Envia dados para o Servlet para Conteudo.
+ * @param {int} codConteudo inteiro representando o ID do conteudo;
+ * @param {String} nomeConteudo representando o nome do conteudo;
  * @returns {String} Retorna uma string com formatação JSON;
- * @author Guilherme Sena
+ * @author Italo Fideles
  */
 function encapsularBuscarConteudo(topico){
     let conteudo = new Conteudo(0);
     conteudo.nomeConteudo = topico;
 
+    return conteudo.toJSON();
+}
+
+function encapsularBuscarConteudoCodigo(codigo){
+    let conteudo = new Conteudo(0);
+    conteudo.codConteudo = codigo;
     return conteudo.toJSON();
 }

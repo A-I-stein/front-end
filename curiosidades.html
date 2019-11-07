@@ -83,17 +83,34 @@
 
       <section class="topicosCuriosidades">
         <div class="topico">
-          <h3>Topico 1</h3>
+          <h3 class="tituloTopico">Topico 1</h3>
           <div class="conteudoTopico">
               || Conteudo do Topico ||
           </div>
         </div>
 
         <div class="topico">
-          <h3>Topico N</h3>
+          <h3 class="tituloTopico">Topico 1</h3>
           <div class="conteudoTopico">
             ||  Conteudo do Topico  ||
           </div>
+        </div>
+
+      </section>
+      <section class="conteudoVisivel">
+        <div class="botaoExibirConteudo">
+          <button type="button" name="voltarExibirConteudo" id="voltarExibirConteudo">
+            Voltar
+          </button>
+        </div>
+        <div class="topicoVisivel">
+          <h3 id="tituloTopicoVisivel"></h3>
+          <div id="conteudoTopicoVisivel">
+            <p id="fonteTopicoVisivel"></p>
+            <p id="dataPublicacaoVisivel"></p>
+          </div>
+
+
         </div>
 
       </section>
@@ -123,4 +140,9 @@
       </div>
     </footer>
   </body>
+
+  <script src="js/Conteudo/conteudo.js" charset="utf-8"></script>
+  <script src="js/Conteudo/encapsuladorConteudo.js" charset="utf-8"></script>
+  <script src="js/Conteudo/conexaoConteudo.js" charset="utf-8"></script>
+  <script src="js/Conteudo/controleConteudo.js" charset="utf-8"></script>
 </html>

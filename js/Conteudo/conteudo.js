@@ -3,7 +3,7 @@
  * @author Italo Fideles
 */
 
-class Questionario{
+class Conteudo{
 
       constructor(){
             this._codConteudo = codConteudo;
@@ -18,7 +18,7 @@ class Questionario{
             this._fonteConteudo = fonteConteudo;
         }
 
-      }
+
 
       printToConsole(){
         console.log("CodConteudo: " + this._codConteudo);
@@ -30,7 +30,7 @@ class Questionario{
         console.log("DataPublicacao: " +  this._dataPublicacao);
         console.log("ResumoConteudo: " + this._resumoConteudo);
         console.log("TipoConteudo: " + this._tipoConteudo);
-        console.log("FonteConteudo: " + this._tipoConteudo);
+        console.log("FonteConteudo: " + this._fonteConteudo);
       }
 
       /**
@@ -56,16 +56,16 @@ class Questionario{
     toJSON()
     {
       let conteudoJSON = {
-        "codConteudo" : this._codConteudo);
-        "nomeConteudo" : this._nomeConteudo);
-        "textoConteudo" : this._textoConteudo);
-        "statusConteudo" : this._statusConteudo);
-        "username" : this._username);
-        "materia" : this._materia);
-        "dataPublicacao" :  this._dataPublicacao);
-        "resumoConteudo" : this._resumoConteudo);
-        "tipoConteudo" : this._tipoConteudo);
-        "fonteConteudo" : this._tipoConteudo);
+        "codConteudo" : this._codConteudo,
+        "nomeConteudo" : this._nomeConteudo,
+        "textoConteudo" : this._textoConteudo,
+        "statusConteudo" : this._statusConteudo,
+        "username" : this._username,
+        "materia" : this._materia,
+        "dataPublicacao" :  this._dataPublicacao,
+        "resumoConteudo" : this._resumoConteudo,
+        "tipoConteudo" : this._tipoConteudo,
+        "fonteConteudo" : this._fonteConteudo,
       }
       return JSON.stringify(conteudoJSON);
     }
@@ -85,7 +85,7 @@ class Questionario{
       this._dataPublicacao = conteudoJSON.dataPublicacao;
       this._resumoConteudo = conteudoJSON.resumoConteudo;
       this._tipoConteudo = conteudoJSON.tipoConteudo;
-      this._tipoConteudo = conteudoJSON.tipoConteudo;
+      this._fonteConteudo = conteudoJSON.fonteConteudo;
     }
 
     //getter
