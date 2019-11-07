@@ -19,10 +19,12 @@ function imprimeTodosConteudos(conteudoVetor){
 
     for (var i = 0; i < selecionaConteudo.length; i++) {
       selecionaConteudo[i].addEventListener("click", function(){
-      //  let elemento = event.target;
-        /* tenho que ir testando os nodos pra pegar o codigo*/
-        //buscarConteudoCodigo(codigo);
-        mostraConteudo('teste');
+        let elemento = event.Target,
+            nodos = elemento.children,
+            codigo = nodos[0].value;;
+
+        buscarConteudoCodigo(codigo);
+        //mostraConteudo(elemento);
       });
     }
 }
@@ -36,6 +38,15 @@ function imprimeConteudo(conteudo){
 }
 
 function mostraConteudo(conteudo){
+  /*
+  let nodos = conteudo.children,
+      codConteudo = nodos[0].value;
+
+      console.log(codConteudo);
+  console.log(conteudo.children);
+
+  console.log(conteudo.parentNode);
+  */
 
   conteudoVisivel.style.display = "grid";
   secaoConteudos.style.display = "none";
@@ -66,11 +77,13 @@ let secaoConteudos = document.querySelector(".topicosCuriosidades"),
 
     let selecionaConteudo = document.querySelectorAll(".topico");
 
+    //va tirar isso aqui
     for (var i = 0; i < selecionaConteudo.length; i++) {
       selecionaConteudo[i].addEventListener("click", function(){
-      //  let elemento = event.target;
-        /* tenho que ir testando os nodos pra pegar o codigo*/
+        let elemento = event.target;
+
+        /*tenho que ir testando os nodos pra pegar o codigo*/
         //buscarConteudoCodigo(codigo);
-        mostraConteudo('teste');
+        mostraConteudo(elemento);
       });
     }
