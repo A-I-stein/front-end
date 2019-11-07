@@ -13,11 +13,12 @@ class Request {
      * obter. Por padrão, o tipo será JSON
      * @returns {Promise} Uma Promise que retorna a resposta do servidor
      */
-    static async get(url, responseType = 'text') {
+    static async get(url, servlet, responseType = 'text') {
 
         return await new Promise(function (resolve, reject) {
             let request = new XMLHttpRequest();
-            let link = "http://localhost:8080/JAVA/BackToFrontServlet?" + url;
+            console.log(request.responseXML);
+            let link = "http://localhost:8080/JAVA/" + servlet + "?" + url;
             console.log("link:" + link);
             request.responseType = responseType;
             request.open('GET', link, true);
