@@ -66,36 +66,61 @@
   	</header>
     <section class="conteudo">
       <div class="tagList">
-        <label class="tag"><a href="#">Tag 1</a></label>
-        <label class="tag"><a href="#">Tag 2</a></label>
-        <label class="tag"><a href="#">Tag 3</a></label>
-        <label class="tag"><a href="#">tag 4</a></label>
-        <label class="tag"><a href="#">Tag 5</a></label>
-        <label class="tag"><a href="#">Tag 6</a></label>
-        <label class="tag"><a href="#">Tag 7</a></label>
+        <label class="tag"><a href="#" value="Relatividade">Relatividade</a></label>
+        <label class="tag"><a href="#" value="Termodinamica">Termodinamica</a></label>
+        <label class="tag"><a href="#" value="MRU">MRU</a></label>
+        <label class="tag"><a href="#" value="MRUV">MRUV</a></label>
+        <label class="tag"><a href="#" value="Teste">Teste</a></label>
+        <label class="tag"><a href="#" value="Teste">Teste</a></label>
+        <label class="tag"><a href="#" value="Teste">Teste</a></label>
         <button type="button" id="teste">TESTE</button>
       </div>
 
-      <h2>Curiosidade</h2>
+      <section class="filter">
+        <h2 class="tituloTipoConteudo">Conteudos</h2>
+        <div class="inputsRadio">
+          <input type="radio" name="tipoConteudo" value="todos" checked>todos
+          <input type="radio" name="tipoConteudo" value="publicacao">publicacoes
+          <input type="radio" name="tipoConteudo" value="curiosidade">curiosidades
+          <input type="radio" name="tipoConteudo" value="materia">materias
+        </div>
+      </section>
+
+
       <section class="pesquisa">
         <input type="text" name="pesquisar" value="" placeholder="Pesquisar">
         <button type="button" name="pesquisarTopico">Pesquisar</button>
+        <button type="button" name="meusConteudos">Meus Conteudos</button>
       </section>
 
       <section class="topicosCuriosidades">
         <div class="topico">
-          <h3 class="tituloTopico">Topico 1</h3>
-          <div class="conteudoTopico">
-            <input type="hidden" class="codConteudo" value="1">
-              || Conteudo do Topico ||
+          <h3 class="tituloTopico">
+            <span class="tipoConteudo">Tipo : </span>
+            <span class="nomeConteudo">Topico 1</span>
+          </h3>
+          <div class="conteudoTopico" value="1">
+            <!-- <input type="hidden" class="codConteudo" value="1"> -->
+            <p class="resumoConteudo">|| Resumo do conteudo do topico ||</p>
+            <p class="fonteConteudo">|| Fonte do conteudo do topico ||</p>
+            <button type="button" name="visualizarConteudo" class="visualizarConteudo" value="1">
+              Visualizar
+            </button>
           </div>
         </div>
 
         <div class="topico">
-          <h3 class="tituloTopico">Topico 1</h3>
-          <div class="conteudoTopico">
-            <input type="hidden" class="codConteudo" value="2">
-            ||  Conteudo do Topico  ||
+          <h3 class="tituloTopico">
+            <span class="tipoConteudo">Tipo : </span>
+            <span class="nomeConteudo">Topico N</span>
+          </h3>
+          <div class="conteudoTopico" value="2">
+            <!-- <input type="hidden" class="codConteudo" value="2"> -->
+            <p class="resumoConteudo">|| Resumo do conteudo do topico ||</p>
+            <p class="fonteConteudo">|| Fonte do conteudo do topico ||</p>
+            <button type="button" name="visualizarConteudo" class="visualizarConteudo" value="2">
+              Visualizar
+            </button>
           </div>
         </div>
 
@@ -109,7 +134,8 @@
         </div>
         <div class="topicoVisivel">
           <h3 id="tituloTopicoVisivel"></h3>
-          <div id="conteudoTopicoVisivel">
+          <div id="contentTopicoVisivel">
+            <p id="conteudoTopicoVisivel"></p>
             <p id="fonteTopicoVisivel"></p>
             <p id="dataPublicacaoVisivel"></p>
           </div>

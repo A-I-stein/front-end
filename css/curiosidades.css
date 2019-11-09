@@ -19,7 +19,8 @@
   border-color: lightgrey;
 }
 .conteudoTopico{
-  height: 7em;
+  height: fit-content;
+  padding-bottom: 2em;
 }
 .botoes{
   position: fixed;
@@ -30,7 +31,9 @@ input[name='pesquisar']{
   border-radius: 1em;
 }
 button[name='pesquisarTopico'],
-button[name='voltarExibirConteudo']{
+button[name='voltarExibirConteudo'],
+button[name='visualizarConteudo'],
+button[name='meusConteudos']{
   box-shadow: inset -3px -3px 3px -1px #ffffff;
   background-color: #6c84afba;
   border-top-left-radius: 7px;
@@ -45,7 +48,7 @@ button[name='voltarExibirConteudo']{
   font-weight: bold;
   height: 33px;
   line-height: 0px;
-  width: 120px;
+  width: fit-content;
   text-decoration: none;
   text-align: center;
   text-shadow: 2px 2px 0px #ffffff;
@@ -55,11 +58,15 @@ button[name='voltarExibirConteudo']{
   float: left;
 }
 button[name='pesquisarTopico']:hover,
-button[name='voltarExibirConteudo']:hover {
+button[name='voltarExibirConteudo']:hover,
+button[name='visualizarConteudo']:hover,
+button[name='meusConteudos']:hover {
 	background-color:#dfdfdf;
 }
 button[name='pesquisarTopico']:active,
-button[name='voltarExibirConteudo']:active {
+button[name='voltarExibirConteudo']:active,
+button[name='visualizarConteudo']:active,
+button[name='meusConteudos']:active {
 	position:relative;
 	top:1px;
 }
@@ -130,9 +137,21 @@ label[name='pagina']{
   left: 0.6em;
 
 }
-#conteudoTopicoVisivel{
-  height: 7em;
+#contentTopicoVisivel{
+  height: fit-content;
   border: ridge;
   border-radius: 10px;
   border-color: lightgrey;
+}
+ .filter{
+   display: block;
+ }
+.inputsRadio{
+  float: right;
+  position: relative;
+  bottom: 1em;
+}
+.tituloTipoConteudo{
+  position: relative;
+  top: 0.5em;
 }
