@@ -3,8 +3,9 @@ function buscarTodosConteudos(){
   window.setTimeout(
     function() {
       conexao.then(function(resultado){
+        let conteudoVeto = [];
         for (var i = 0; i < resultado.length; i++) {
-          resultado[i] = transformaEmConteudo(resultado[i]);
+          conteudoVeto[i] = transformaEmConteudo(JSON.parse(resultado[i]));
         }
       imprimeTodosConteudos(resultado);
     }
