@@ -1,10 +1,10 @@
-function imprimeTodosConteudos(conteudoVetor){
+function imprimeTodosConteudos(conteudosVetor){
   //conteudo é um array com varios conteudos:
   secaoConteudos.innerHTML = "";
-
+  console.log(conteudosVetor);
   let string = "";
 
-      for(i = 0; i < conteudoVetor.length; i++){
+      for(i = 0; i < conteudosVetor.length; i++){
         string += "<div class=\"topico\">";
         string += "<h3 class=\"tituloTopico\">";
         string += "<h3 class=\"tituloTopico\">";

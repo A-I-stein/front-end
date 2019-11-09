@@ -6,31 +6,31 @@
 class Conteudo{
 
       constructor(){
-            this._codConteudo = codConteudo;
-            this._nomeConteudo = nomeConteudo;
-            this._textoConteudo = textoConteudo;
-            this._statusConteudo = statusConteudo;
-            this._username = username;
-            this._materia = materia;
-            this._dataPublicacao = dataPublicacao;
-            this._resumoConteudo = resumoConteudo;
-            this._tipoConteudo = tipoConteudo;
-            this._fonteConteudo = fonteConteudo;
+            this.codConteudo = "";
+            this.nomeConteudo = "";
+            this.textoConteudo = "";
+            this.statusConteudo = "";
+            this.username = "";
+            this.materia = "";
+            this.dataPublicacao = "";
+            this.resumoConteudo = "";
+            this.tipoConteudo = "";
+            this.fonteConteudo = "";
         }
 
 
 
       printToConsole(){
-        console.log("CodConteudo: " + this._codConteudo);
-        console.log("NomeConteudo: " + this._nomeConteudo);
-        console.log("TextoConteudo: " + this._textoConteudo);
-        console.log("StatusConteudo: " + this._statusConteudo);
-        console.log("Username: " + this._username);
-        console.log("Materia: " + this._materia);
-        console.log("DataPublicacao: " +  this._dataPublicacao);
-        console.log("ResumoConteudo: " + this._resumoConteudo);
-        console.log("TipoConteudo: " + this._tipoConteudo);
-        console.log("FonteConteudo: " + this._fonteConteudo);
+        console.log("CodConteudo: " + this.codConteudo);
+        console.log("NomeConteudo: " + this.nomeConteudo);
+        console.log("TextoConteudo: " + this.textoConteudo);
+        console.log("StatusConteudo: " + this.statusConteudo);
+        console.log("Username: " + this.username);
+        console.log("Materia: " + this.materia);
+        console.log("DataPublicacao: " +  this.dataPublicacao);
+        console.log("ResumoConteudo: " + this.resumoConteudo);
+        console.log("TipoConteudo: " + this.tipoConteudo);
+        console.log("FonteConteudo: " + this.fonteConteudo);
       }
 
       /**
@@ -56,16 +56,16 @@ class Conteudo{
     toJSON()
     {
       let conteudoJSON = {
-        "codConteudo" : this._codConteudo,
-        "nomeConteudo" : this._nomeConteudo,
-        "textoConteudo" : this._textoConteudo,
-        "statusConteudo" : this._statusConteudo,
-        "username" : this._username,
-        "materia" : this._materia,
-        "dataPublicacao" :  this._dataPublicacao,
-        "resumoConteudo" : this._resumoConteudo,
-        "tipoConteudo" : this._tipoConteudo,
-        "fonteConteudo" : this._fonteConteudo,
+        "codConteudo" : this.codConteudo,
+        "nomeConteudo" : this.nomeConteudo,
+        "textoConteudo" : this.textoConteudo,
+        "statusConteudo" : this.statusConteudo,
+        "username" : this.username,
+        "materia" : this.materia,
+        "dataPublicacao" :  this.dataPublicacao,
+        "resumoConteudo" : this.resumoConteudo,
+        "tipoConteudo" : this.tipoConteudo,
+        "fonteConteudo" : this.fonteConteudo,
       }
       return JSON.stringify(conteudoJSON);
     }
@@ -76,80 +76,80 @@ class Conteudo{
    * @author Italo Fideles
    */
     fromJSON(conteudoJSON){
-      this._codConteudo  = conteudoJSON.codConteudo;
-      this._nomeConteudo = conteudoJSON.nomeConteudo;
-      this._textoConteudo = conteudoJSON.textoConteudo;
-      this._statusConteudo = conteudoJSON.statusConteudo;
-      this._username = conteudoJSON.username;
-      this._materia  = conteudoJSON.materia;
-      this._dataPublicacao = conteudoJSON.dataPublicacao;
-      this._resumoConteudo = conteudoJSON.resumoConteudo;
-      this._tipoConteudo = conteudoJSON.tipoConteudo;
-      this._fonteConteudo = conteudoJSON.fonteConteudo;
+      this.codConteudo  = conteudoJSON.codConteudo;
+      this.nomeConteudo = conteudoJSON.nomeConteudo;
+      this.textoConteudo = conteudoJSON.textoConteudo;
+      this.statusConteudo = conteudoJSON.statusConteudo;
+      this.username = conteudoJSON.username;
+      this.materia  = conteudoJSON.materia;
+      this.dataPublicacao = conteudoJSON.dataPublicacao;
+      this.resumoConteudo = conteudoJSON.resumoConteudo;
+      this.tipoConteudo = conteudoJSON.tipoConteudo;
+      this.fonteConteudo = conteudoJSON.fonteConteudo;
     }
 
     //getter
 
     get CodConteudo() {
-        return this._codConteudo;
+        return this.codConteudo;
     }
 
     get NomeConteudo() {
-        return this._nomeConteudo;
+        return this.nomeConteudo;
     }
 
     get TextoConteudo() {
-        return this._textoConteudo;
+        return this.textoConteudo;
     }
 
      get StatusConteudo() {
-        return this._statusConteudo;
+        return this.statusConteudo;
     }
 
     get Username() {
-        return this._username;
+        return this.username;
     }
 
     get Materia() {
-        return this._materia;
+        return this.materia;
     }
 
     get DataPublicacao() {
-        return this._dataPublicacao;
+        return this.dataPublicacao;
     }
 
     get ResumoConteudo() {
-        return this._resumoConteudo;
+        return this.resumoConteudo;
     }
 
     get TipoConteudo() {
-        return this._tipoConteudo;
+        return this.tipoConteudo;
     }
 
     get FonteConteudo() {
-        return this._fonteConteudo;
+        return this.fonteConteudo;
     }
 
     //setter
 
     set CodConteudo(codConteudo) {
-      this._codConteudo = this.tryParse(codConteudo);
+      this.codConteudo = this.tryParse(codConteudo);
     }
 
     set NomeConteudo(nomeConteudo) {
-      this._nomeConteudo = nomeConteudo;
+      this.nomeConteudo = nomeConteudo;
     }
 
     set TextoConteudo(textoConteudo) {
-      this._textoConteudo = textoConteudo;
+      this.textoConteudo = textoConteudo;
     }
 
     set StatusConteudo(statusConteudo) {
-      this._statusConteudo = statusConteudo;
+      this.statusConteudo = statusConteudo;
     }
 
     set Username(username) {
-      this._username = username;
+      this.username = username;
     }
 
     set Materia(materia) {
@@ -157,19 +157,19 @@ class Conteudo{
     }
 
     set DataPublicacao(dataPublicacao) {
-      this._dataPublicacao = dataPublicacao;
+      this.dataPublicacao = dataPublicacao;
     }
 
     set ResumoConteudo(resumoConteudo) {
-      this._resumoConteudo = resumoConteudo;
+      this.resumoConteudo = resumoConteudo;
     }
 
     set TipoConteudo(tipoConteudo) {
-      this._tipoConteudo = tipoConteudo;
+      this.tipoConteudo = tipoConteudo;
     }
 
     set FonteConteudo(fonteConteudo) {
-      this._fonteConteudo = fonteConteudo;
+      this.fonteConteudo = fonteConteudo;
     }
 
 }

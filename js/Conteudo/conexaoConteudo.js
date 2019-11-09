@@ -2,10 +2,9 @@ function buscarTodosConteudos(){
   let conexao = Request.get("req=all", "ConteudoServlet");
       conexao.then(function(resultado){
         let conteudoVeto = [];
-        for (var i = 0; i < resultado.length; i++) {
-          conteudoVeto[i] = transformaEmConteudo(JSON.parse(resultado[i]));
-        }
-      imprimeTodosConteudos(conteudoVeto);
+        conteudoVeto[0] = transformaEmConteudo(JSON.parse(resultado)[0]);
+    imprimeTodosConteudos(conteudoVeto);
+    console.log(conteudoVeto);
     });
 
 }
@@ -73,7 +72,7 @@ function buscarConteudoCodigo(codigo){
 }
 
 function transformaEmConteudo(resultado){
-  let conteudo = new Conteudo(null);
+  let conteudo = new Conteudo();
   conteudo.fromJSON(resultado);
   return conteudo;
 }
