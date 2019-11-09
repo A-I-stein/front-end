@@ -17,7 +17,6 @@ class Request {
 
         return await new Promise(function (resolve, reject) {
             let request = new XMLHttpRequest();
-            console.log(request.responseXML);
             let link = "http://localhost:8080/JAVA/" + servlet + "?" + url;
             console.log("link:" + link);
             request.responseType = responseType;
