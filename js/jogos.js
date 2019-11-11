@@ -1,5 +1,6 @@
 
 window.onload = function(e){
+
   function addOrbita(planeta, solCSS) {
   let distancia = distanciaCentro(planeta, solCSS);
   console.log(distancia);
