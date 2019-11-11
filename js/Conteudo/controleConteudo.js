@@ -33,8 +33,11 @@ function imprimeTodosConteudos(conteudosVetor){
         let elemento = event.target,
             codigo = elemento.value;
 
-        buscarConteudoCodigo(codigo);
-      });
+        buscarConteudoCodigo(codigo, function(conteudo){
+          console.log(conteudo);
+          imprimeConteudo(conteudo);
+        });
+    })
     }
   }
 
@@ -50,18 +53,11 @@ function mostraConteudo(){
 
     conteudoVisivel.style.display = "grid";
     secaoConteudos.style.display = "none";
-    /*essa parte sera retirada futuramente*/
-  /*  tituloTopicoVisivel.innerHTML = "testando";
-    conteudoTopicoVisivel.innerHTML = "lorem ipsum";
-    fonteTopicoVisivel.innerHTML = "google";
-    dataPublicacaoVisivel.innerHTML = "14/10/2000";*/
-    /*ate aqui*/
 
   }
 
 function retornarExibicao(){
 
-    console.log("teste");
     conteudoVisivel.style.display = "none";
     secaoConteudos.style.display = "grid";
   }
@@ -99,7 +95,18 @@ function defineExibicaoConteudo(elemento){
 }
 
   let botao = document.querySelector("#teste");
-  botao.addEventListener("click",   buscarTodosConteudos);
+  botao.addEventListener("click", chamadaInicial);
+
+chamadaInicial()
+
+function chamadaInicial() {
+  buscarTodosConteudos(function(conteudo){
+    console.log(conteudo);
+    imprimeTodosConteudos(conteudo);
+  })
+}
+
+
 
 
   let secaoConteudos = document.querySelector(".topicosCuriosidades"),
@@ -116,31 +123,46 @@ function defineExibicaoConteudo(elemento){
 
 
       botaoVoltarExibir.addEventListener("click", retornarExibicao);
+
       botaoPesquisar[0].addEventListener("click", function(){
-        let topico = document.getElementsByName("pesquisar")[0].value;
-        console.log(topico);
-        buscarConteudoNome(topico);
+        let nome = document.getElementsByName("pesquisar")[0].value;
+        console.log(nome);
+        buscarConteudoNome(nome, function(conteudo){
+          console.log(conteudo);
+          imprimeTodosConteudos(conteudo);
+        })
       })
+
       botaoMeusConteudos[0].addEventListener("click", function(){
         /*pega o username de quem está logado*/
-        // let topico = document.getElementsByName("pesquisar")[0].value;
-        // console.log(topico);
-        /*buscarConteudoUsername(variavel);*/
+        // let username = ????????
+        // console.log(username);
+        buscarConteudoUsername(username, function(conteudo){
+          console.log(conteudo);
+          imprimeTodosConteudos(conteudo);
+        })
       })
 
       for (var i = 0; i < filtro.length; i++) {
         filtro[i].addEventListener("click", function(){
           let elemento = event.target.value;
           console.log(elemento);
-          //buscarConteudoTipo(elemento);
+          buscarConteudoTipo(elemento, function(conteudo){
+            console.log(conteudo);
+            imprimeTodosConteudos(conteudo);
+          })
           defineExibicaoConteudo(elemento);
         })
       }
+
       for (var i = 0; i < tags.length; i++) {
         tags[i].addEventListener("click", function(){
           let elemento = event.target.innerHTML;
           console.log(elemento);
-          //buscarConteudoMateria(elemento);
+          buscarConteudoMateria(elemento, function(conteudo){
+            console.log(conteudo);
+            imprimeTodosConteudos(conteudo);
+          })
           defineExibicaoConteudo(elemento);
         })
       }
@@ -156,8 +178,10 @@ function defineExibicaoConteudo(elemento){
               console.log(codigo);
 
           /*tenho que ir testando os nodos pra pegar o codigo*/
-          //buscarConteudoCodigo(codigo);
-          mostraConteudo(elemento);
+          buscarConteudoCodigo(codigo, function(conteudo){
+            console.log(conteudo);
+            imprimeConteudo(conteudo);
+          });
         });
       }
       //ate aqui

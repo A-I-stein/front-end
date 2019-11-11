@@ -1,78 +1,66 @@
-function buscarTodosConteudos(){
+function buscarTodosConteudos(fn){
   let conexao = Request.get("req=all", "ConteudoServlet");
       conexao.then(function(resultado){
-        let conteudoVeto = [];
-        conteudoVeto[0] = transformaEmConteudo(JSON.parse(resultado)[0]);
-    imprimeTodosConteudos(conteudoVeto);
-    console.log(conteudoVeto);
+        for (var i = 0; i < JSON.parse(resultado).length; i++) {
+          fn(new Conteudo(JSON.parse(resultado)[i]))
+        }
     });
-
 }
 
-function buscarConteudoMateria(materia) {
+
+
+
+function buscarConteudoMateria(materia, fn) {
   let conteudoJSON = encapsularBuscarConteudoMateria(materia);
-  let conexao = Request.get("tipo="+conteudoJSON+"&req=materia", "ConteudoServlet");
-
+  let conexao = Request.get("req=materia&tipo="+conteudoJSON, "ConteudoServlet");
       conexao.then(function(resultado) {
-        let conteudoVeto = [];
         for (var i = 0; i < resultado.length; i++) {
-          conteudoVeto[i] = transformaEmConteudo(JSON.parse(resultado[i]));
+          fn(new Conteudo(JSON.parse(resultado)[i]))
         }
-        imprimeTodosConteudo(conteudoVeto);
     });
 }
 
-function buscarConteudoTipo(tipo) {
+function buscarConteudoTipo(tipo, fn) {
   let conteudoJSON = encapsularBuscarConteudoTipo(tipo);
-  let conexao = Request.get("tipo="+conteudoJSON+"&req=materia", "ConteudoServlet");
-
+  let conexao = Request.get("req=tipo%tipo="+conteudoJSON, "ConteudoServlet");
       conexao.then(function(resultado) {
         for (var i = 0; i < resultado.length; i++) {
-        let conteudoVeto = [];
-          conteudoVeto[i] = transformaEmConteudo(JSON.parse(resultado[i]));
+          fn(new Conteudo(JSON.parse(resultado)[i]))
         }
-        imprimeTodosConteudo(conteudoVeto);
     });
 }
-function buscarConteudoNome(topico){
+function buscarConteudoNome(topico, fn){
   let conteudoJSON = encapsularBuscarConteudoNome(topico);
-  let conexao = Request.get("tipo="+conteudoJSON+
-              "&req=especifco", "ConteudoServlet");
-
+  let conexao = Request.get("req=especifco&tipo="+conteudoJSON, "ConteudoServlet");
       conexao.then(function(resultado) {
-        let conteudoVeto;
-        conteudoVeto = transformaEmConteudo(JSON.parse(resultado));
-        imprimeTodosConteudo(conteudoVeto);
+        for (var i = 0; i < resultado.length; i++) {
+          fn(new Conteudo(JSON.parse(resultado)[i]))
+        }
   });
 }
 
-function buscarConteudoUsername(username){
+function buscarConteudoUsername(username, fn){
   let conteudoJSON = encapsularBuscarConteudoUsername(username);
-  let conexao = Request.get("tipo="+conteudoJSON+
-              "&req=usuario", "ConteudoServlet");
-
-      conexao.then(function(resultado) {
-        let conteudoVeto = [];
-        for (var i = 0; i < resultado.length; i++) {
-          resultado[i] = transformaEmConteudo(JSON.parse(resultado[i]));
-        }
-        imprimeTodosConteudo(conteudoVeto);
-    });
+  let conexao = Request.get("req=usuario&tipo="+conteudoJSON, "ConteudoServlet");
+  conexao.then(function(resultado) {
+    for (var i = 0; i < resultado.length; i++) {
+      fn(new Conteudo(JSON.parse(resultado)[i]))
+    }
+  });
 }
 
-function buscarConteudoCodigo(codigo){
+function buscarConteudoCodigo(codigo, fn){
   let conteudoJSON = encapsularBuscarConteudoCodigo(codigo);
-  let conexao = Request.get("tipo="+conteudoJSON+
-              "&req=codigo", "ConteudoServlet");
-      conexao.then(function(resultado) {
-        let conteudoVeto;
-            conteudoVeto = transformaEmConteudo(JSON.parse(resultado));
-            imprimeConteudo(conteudoVeto);
-    });
+  let conexao = Request.get("req=codigo&tipo="+conteudoJSON, "ConteudoServlet");
+  conexao.then(function(resultado) {
+      fn(new Conteudo(JSON.parse(resultado)))
+  });
 }
 
+/*
 function transformaEmConteudo(resultado){
   let conteudo = new Conteudo();
   conteudo.fromJSON(resultado);
   return conteudo;
 }
+*/
