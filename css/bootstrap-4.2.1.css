@@ -2948,11 +2948,13 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  font-size: 10px;
+  background-color: transparent;
+  color: #aaa;
 }
 
 .btn-link:hover {
-  color: #0056b3;
+  color: #fff;
   text-decoration: underline;
 }
 
