@@ -1,21 +1,21 @@
 /*
-* Classe objeto para a encapsulação de dados do Patrimonio.
+* Classe objeto para a encapsulação de dados do Conteudo
  * @author Italo Fideles
 */
 
 class Conteudo{
 
-      constructor(){
-            this.codConteudo = "";
-            this.nomeConteudo = "";
-            this.textoConteudo = "";
-            this.statusConteudo = "";
-            this.username = "";
-            this.materia = "";
-            this.dataPublicacao = "";
-            this.resumoConteudo = "";
-            this.tipoConteudo = "";
-            this.fonteConteudo = "";
+      constructor(content){
+            this.codConteudo      = content.codConteudo;
+            this.nomeConteudo     = content.nomeConteudo;
+            this.textoConteudo    = content.textoConteudo;
+            this.statusConteudo   = content.statusConteudo;
+            this.username         = content.username;
+            this.materia          = content.materia;
+            this.dataPublicacao   = content.dataPublicacao;
+            this.resumoConteudo   = content.resumoConteudo;
+            this.tipoConteudo     = content.tipoConteudo;
+            this.fonteConteudo    = content.fonteConteudo;
         }
 
 
