@@ -65,8 +65,37 @@
   		</div>
   	</header>
     <section class="conteudo">
-      <h1>Questionario</h1>
-      <section class="perguntas">
+      <section class="modalEscolha">
+        <h2>Selecione o seu questionario</h2>
+        <div class="escolha">
+          <h3>Materia</h3>
+          <select name="materiaEscolha">
+            <option value="0">Movimento</option>
+            <option value="1">Som & Ondas</option>
+            <option value="2">Trabalho, Energia & Potência</option>
+            <option value="3">Termodinâmica</option>
+            <option value="4">Mecânica Quântica</option>
+            <option value="5">Luz & Radicação</option>
+            <option value="6">Electricidade</option>
+          </select>
+          <h3>Numero do questionario</h3>
+          <select name="questionarioEscolha">
+            <option value="0">1</option>
+            <option value="1">2</option>
+            <option value="2">3</option>
+            <option value="3">4</option>
+            <option value="4">5</option>
+            <option value="5">6</option>
+            <option value="6">7</option>
+          </select>
+          <button type="button" name="botaoIniciarQuestionario">Iniciar</button>
+        </div>
+
+      </section>
+
+
+
+      <section class="questoes">
         <div class="pergunta">
           <input type="text" size="100px" name="pergunta" value="" placeholder="Pergunta" readonly> <br>
           <ul class="respostas">
@@ -103,5 +132,9 @@
         </div>
       </footer>
     </body>
-    <script type="text/javascript"></script>
+    <script src="js/FrontToBack.js"></script>
+    <script src="js/Questionario/questionario.js" charset="utf-8"></script>
+    <script src="js/Questionario/encapsuladorQuestionario.js" charset="utf-8"></script>
+    <script src="js/Questionario/conexaoQuestionario.js" charset="utf-8"></script>
+    <script src="js/Questionario/controleQuestionario.js" charset="utf-8"></script>
 </html>

@@ -74,9 +74,10 @@ function defineExibicaoConteudo(elemento){
   console.log(elemento);
   let titulo = document.querySelector(".tituloTipoConteudo");
   switch (elemento) {
-  /*  case "todos":
+    case "todos":
       titulo.innerHTML = "Conteudos";
       break;
+      /*
     case "publicacao":
       titulo.innerHTML = "Publicações";
       break;
@@ -167,6 +168,7 @@ function chamadaInicial() {
           let elemento = event.target.value;
           if (elemento == "todos") {
             chamadaInicial();
+            defineExibicaoConteudo(elemento);
           }
           else {
             buscarConteudoTipo(elemento, function(conteudo){
@@ -176,7 +178,7 @@ function chamadaInicial() {
             defineExibicaoConteudo(elemento);
           }
         })
-          
+
       }
 
       for (var i = 0; i < tags.length; i++) {
