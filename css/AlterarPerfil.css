@@ -4,6 +4,12 @@ color:#fff;
 text-align: center;
 }
 
+body{
+	height: 100%;
+	width: : 100%; 
+	background: url(../imgs/ceu-estrelado.gif);
+} 
+
 #rightPanel{
     min-height:415px;
 }

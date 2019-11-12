@@ -6,70 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="css/AlterarPerfil.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
     <body>
-
+        
         <div class="container">
             <br>
             <br>
-        	<div class="row" id="main">
+            <div class="row" id="main">
                 <div class="col-md-4 well" id="leftPanel">
                     <div class="row">
                         <div class="col-md-12">
-                        	<!-- Adaptar para receber do BD -->
+                            <!-- Adaptar para receber do BD -->
                             <div>
-                				<img src="imgs/Hector.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                				<h2>Hector</h2>
-                				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                				tempor incididunt ut labore et dolore magna aliqua.</p>
-                			</div>
-                		</div>
+                                <img src="imgs/Hector.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                                <h2>Hector</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-8 well" id="rightPanel">
                     <div class="row">
                         <div class="col-md-12">
                             <!--Adaptar para modificar o BD-->
-                        	<form role="form">
-                    			<h2>Editar Perfil</h2>
+                            <form role="form">
+                                <h2>Editar Perfil</h2>
                                 <hr class="colorgraph">
-                    			<div class="row">
-                    				<div class="col-xs-12 col-sm-6 col-md-6">
-                    					<div class="form-group">
+                                <div class="form-group">
+                                    <input type="text" name="username" class="form-control input-lg" placeholder="Nome de Usuário" tabindex="4">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
                                             <input type="text" name="primeiro_nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="1">
-                    					</div>
-                    				</div>
-                    				<div class="col-xs-12 col-sm-6 col-md-6">
-                    					<div class="form-group">
-                    						<input type="text" name="ultimo_nome" id="ultimo_name" class="form-control input-lg" placeholder="Último Nome" tabindex="2">
-                    					</div>
-                    				</div>
-                    			</div>
-                    			<div class="form-group">
-                    				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4">
-                    			</div>
-                    			<div class="row">
-                    				<div class="col-xs-12 col-sm-6 col-md-6">
-                    					<div class="form-group">
-                    						<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
-                    					</div>
-                    				</div>
-                    				<div class="col-xs-12 col-sm-6 col-md-6">
-                    					<div class="form-group">
-                    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirmar Senha" tabindex="6">
-                    					</div>
-                    				</div>
-                    			</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="ultimo_nome" id="ultimo_name" class="form-control input-lg" placeholder="Último Nome" tabindex="2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="date" name="datanasc" class="form-control input-lg" placeholder="Data de Nascimento" tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <select name="sexo" class="form-control input-lg">
+                                              <option value="Sexo">Selecione seu sexo</option>
+                                              <option value="masculino">Masculino</option>
+                                              <option value="feminino">Feminino</option>
+                                              <option value="outro">Outro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="escola" id="escola" class="form-control input-lg" placeholder="Escola/Universidade" tabindex="4">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" name="password_confirmation" class="form-control input-lg" placeholder="Confirmar Senha" tabindex="6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="especialidade" class="form-control input-lg" placeholder="Especialidade" tabindex="4">
+                                </div>
                                 <hr class="colorgraph">
-                    			<div class="row">
-                    				<div class="col-xs-12 col-md-6"><a href="PáginaPerfil.html" class="btn btn-success btn-block btn-lg">Salvar Modificações</a></div>
-                    			</div>
-                    		</form>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="submit" name="finalizar" value="Confirmar Alterações" class="btn btn-success btn-block btn-lg">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                           <input type="reset" name="cancelar" class="btn btn-info btn-block btn-lg" value="Cancelar">
+                                        </div>
+                                    </div>
+                                </div>  
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>       
+        <script type="text/javascript"></script>
         <footer id="rodape">
           <div id="Rodape-Conteudo">
             <span class="textoRodape">
@@ -78,5 +115,4 @@
           </div>
         </footer>
     </body>
-    <script type="text/javascript"></script>
 </html>
