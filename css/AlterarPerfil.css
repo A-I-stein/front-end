@@ -18,6 +18,7 @@ body{
   border-top: 0;
   background: #6c84afba;
   border-radius: 5px;
+<<<<<<< HEAD
 }
 #loginPanel{
 text-align: center;
@@ -59,3 +60,6 @@ text-align: center;
 @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
 @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+=======
+} 
+>>>>>>> singUp-InPages
