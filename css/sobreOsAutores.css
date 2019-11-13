@@ -13,16 +13,14 @@ section {
 }
 #logoSobreImagem{
   position: absolute;
-  height: 40vh;
-  width: 73vh;
-  top: 16vh;
-  left: 28vw;
+  height: 100%;
+  width: 100%;
 }
 #imagemSobreAIStein{
   position: relative;
   height: 40vh;
-  width: 47vh;
-  left: 36vw;
+  width: 70vh;
+  left: 34vw;
   margin-top: 13vh;
 }
 #imagemSobreArthur{
@@ -75,17 +73,17 @@ section {
   margin-bottom: 51vh;
   }
 #sobreGabriel{
-  box-shadow: inset 0em 0em 1em 0em black;
+  box-shadow: 1em 0em 1em black;
   background-color: #658394;
   margin-bottom: 51vh;
   }
 #sobreHeitor{
-  box-shadow: 0 0 1em black;
+  box-shadow: 1em 0em 1em black;
   background-color: #658394;
   margin-bottom: 51vh;
   }
 #sobreItalo{
-  box-shadow: inset 0em 0em 1em 0em black;
+  box-shadow: 1em 0em 1em black;
   background-color: #658394;
   }
 
