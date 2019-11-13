@@ -5,9 +5,9 @@
 
 class Questionario{
 
-      constructor(){
-        this._codQuestionario = codQuestionario;
-        this._materia = materia;
+      constructor(content){
+        this._codQuestionario = content.codQuestionario;
+        this._materia = content.materia;
 
       }
 

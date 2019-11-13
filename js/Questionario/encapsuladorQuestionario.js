@@ -6,10 +6,9 @@
  * @returns {String} Retorna uma string com formatação JSON;
  * @author Guilherme Sena
  */
-function encapsularBuscarQuestionario(codQuestionario, materia){
+function encapsularBuscarQuestionario(codQuestionario){
     let questionario = new Questionario(0);
     questionario.codQuestionario = codQuestionario;
-    questionario.materia = materia;
 
     return questionario.toJSON();
 }

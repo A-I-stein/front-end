@@ -87,10 +87,10 @@ function defineExibicaoConteudo(elemento){
       titulo.innerHTML = "Originais";
       break;
     case "0":
-      titulo.innerHTML = "Som & Ondas";
+      titulo.innerHTML = "Movimento";
       break;
     case "1":
-      titulo.innerHTML = "Termodinamica";
+      titulo.innerHTML = "Som & Ondas";
       break;
     case "2":
       titulo.innerHTML = "Trabalho, Energia & Potência";

@@ -12,7 +12,7 @@
 }
 .botoes{
   position: fixed;
-  bottom: 1em;
+  bottom: 5em;
   right: 10vw;
 }
 input{
@@ -74,9 +74,23 @@ input[name='cancelar']:active {
 }
 .questoes{
   display: none;
+  border-style: ridge;
+  position: absolute;
+  top: 3em;
+}
+span[name='respDescricao']{
+  color: black;
+}
+label[name='pergunta']{
+  height: 2em;
+  width: fit-content;
+  color: black;
 }
 
-button[name='botaoIniciarQuestionario']{
+button[name='botaoIniciarQuestionario'],
+button[name='proximaQuestao'],
+button[name='retornarQuestao'],
+button[name='finalizar']{
   box-shadow: inset -3px -3px 3px -1px #ffffff;
   background-color: #6c84afba;
   border-top-left-radius: 7px;
@@ -98,10 +112,16 @@ button[name='botaoIniciarQuestionario']{
   float: right;
 }
 
-button[name='botaoIniciarQuestionario']:hover {
+button[name='botaoIniciarQuestionario']:hover,
+button[name='proximaQuestao']:hover,
+button[name='retornarQuestao']:hover,
+button[name='finalizar']:hover {
 	background-color:#dfdfdf;
 }
-button[name='botaoIniciarQuestionario']:active {
+button[name='botaoIniciarQuestionario']:active,
+button[name='proximaQuestao']:active,
+button[name='retornarQuestao']:active,
+button[name='finalizar']:active {
 	position:relative;
 	top:1px;
 }
@@ -112,4 +132,5 @@ button[name='botaoIniciarQuestionario']:active {
   border-style: ridge;
   border-radius: 0.2em;
   padding: 1em;
+  display: block;
 }
