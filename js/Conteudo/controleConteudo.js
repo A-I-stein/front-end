@@ -77,16 +77,15 @@ function defineExibicaoConteudo(elemento){
     case "todos":
       titulo.innerHTML = "Conteudos";
       break;
-      /*
-    case "publicacao":
+    case "P":
       titulo.innerHTML = "Publicações";
       break;
-    case "curiosidade":
+    case "C":
       titulo.innerHTML = "Curiosidades";
       break;
-    case "materia":
-      titulo.innerHTML = "Materias";
-      break;*/
+    case "O":
+      titulo.innerHTML = "Originais";
+      break;
     case "0":
       titulo.innerHTML = "Som & Ondas";
       break;
@@ -171,8 +170,8 @@ function chamadaInicial() {
             defineExibicaoConteudo(elemento);
           }
           else {
+            limpaConteudoVisivel();
             buscarConteudoTipo(elemento, function(conteudo){
-              console.log(conteudo);
               imprimeTodosConteudos(conteudo);
             })
             defineExibicaoConteudo(elemento);
@@ -187,7 +186,6 @@ function chamadaInicial() {
           elemento = elemento.getAttribute("value");
           limpaConteudoVisivel();
           buscarConteudoMateria(elemento, function(conteudo){
-            console.log(conteudo);
             imprimeTodosConteudos(conteudo);
           })
           defineExibicaoConteudo(elemento);

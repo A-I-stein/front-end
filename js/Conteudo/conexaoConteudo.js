@@ -22,7 +22,7 @@ function buscarConteudoMateria(materia, fn) {
 
 function buscarConteudoTipo(tipo, fn) {
   let conteudoJSON = encapsularBuscarConteudoTipo(tipo);
-  let conexao = Request.get("req=tipo%tipo="+conteudoJSON, "ConteudoServlet");
+  let conexao = Request.get("req=tipo&tipo="+conteudoJSON, "ConteudoServlet");
       conexao.then(function(resultado) {
         for (var i = 0; i < resultado.length; i++) {
           fn(new Conteudo(JSON.parse(resultado)[i]))
