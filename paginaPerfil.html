@@ -99,7 +99,7 @@
                                     <div class="row">
                                       <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                                      <input type="text" name="nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="2">
+                                          <input type="text" name="nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="2">
                                         </div>
                                       </div>
                                       <div class="col-xs-12 col-sm-6 col-md-6">
@@ -162,9 +162,7 @@
                         <!-- Adaptar para receber do BD -->
                         <div>
                             <img src="imgs/Hector.jpg" alt="Texto Alternativo" class="img-circle img-thumbnail">
-                            <h2>Hector</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h2>Username</h2>
                         </div>
                     </div>
                 </div>
@@ -176,52 +174,58 @@
                         <form role="form">
                             <h2>Informações do seu Perfil</h2>
                             <hr class="colorgraph">
-                            <div class="form-group">
-                                    <h4>nome de Usuário</h4>
-                                </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="primeiro_nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="1">
+                                            <p class="form-control input-lg">Primeiro Nome</p>
+                                            <!--<input type="text" name="primeiro_nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="1">-->
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="ultimo_nome" id="ultimo_name" class="form-control input-lg" placeholder="Último Nome" tabindex="2">
+                                          <p class="form-control input-lg">Último Nome</p>
+                                          <!--<input type="text" name="ultimo_nome" id="ultimo_name" class="form-control input-lg" placeholder="Último Nome" tabindex="2">-->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4">
+                                    <p class="form-control input-lg">email@gmail.com</p>
+                                    <!-- <input type="email" name="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4"> -->
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="date" name="datanasc" class="form-control input-lg" placeholder="Data de Nascimento" tabindex="5">
+                                          <p class="form-control input-lg">Data de Nascimento</p><!---->
+                                            <!--<input type="date" name="datanasc" class="form-control input-lg" placeholder="Data de Nascimento" tabindex="5">-->
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-6">
                                         <div class="form-group">
+                                          <p class="form-control input-lg">Sexo</p>
+                                          <!-- 
                                             <select name="sexo" class="form-control input-lg">
                                               <option value="Sexo">Selecione seu sexo</option>
                                               <option value="masculino">Masculino</option>
                                               <option value="feminino">Feminino</option>
-                                              <option value="outro">Outro</option>
+                                              <option value="outro">Outro</option>-->
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="escola" class="form-control input-lg" placeholder="Escola/Universidade" tabindex="4">
+                                    <p class="form-control input-lg">Escola/Universidade</p>
+                                    <!--<input type="text" name="escola" class="form-control input-lg" placeholder="Escola/Universidade" tabindex="4">-->
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="especialidade" class="form-control input-lg" placeholder="Especialidade" tabindex="4">
+                                    <p class="form-control input-lg">Especialidade</p>
+                                    <!--<input type="text" name="especialidade" class="form-control input-lg" placeholder="Especialidade" tabindex="4">-->
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="Adimin" class="form-control input-lg" placeholder="Tempo como Administrador" tabindex="4">
+                                    <p class="form-control input-lg">Tempo como Administrador</p>
+                                    <!--<input type="text" name="Adimin" class="form-control input-lg" placeholder="Tempo como Administrador" tabindex="4">-->
                                 </div>
                                 <hr class="colorgraph">
-                                <div class="form-group"><a href="AlterarPerfil.html" class="btn btn-primary btn-block btn-lg">Editar Perfil</a></div>
+                                <div class="form-group"><button id="Alterar" onclick="document.getElementById('id03').style.display='block'" class="btn btn-primary btn-block btn-lg">Editar Perfil</button></div>
                             </div>
                         </form>
                     </div>
@@ -229,6 +233,75 @@
             </div>
         </div>
     </div>
+    <div id="id03" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+            <span onclick="document.getElementById('id03').style. display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <div class="col-md-12">
+                      <!--Adaptar para modificar o BD-->
+                      <form role="form">
+                        <h2>Editar Perfil</h2>
+                        <hr class="colorgraph">
+                        <div class="form-group">
+                          <input type="text" name="username" class="form-control input-lg" placeholder="Nome de Usuário" tabindex="4">
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <input type="text" name="primeiro_nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="1">
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <input type="text" name="ultimo_nome" id="ultimo_name" class="form-control input-lg" placeholder="Último Nome" tabindex="2">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" name="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4">
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <input type="date" name="datanasc" class="form-control input-lg" placeholder="Data de Nascimento" tabindex="5">
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <select name="sexo" class="form-control input-lg">
+                                <option value="Sexo">Selecione seu sexo</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outro">Outro</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                              <input type="password" name="password_confirmation" class="form-control input-lg" placeholder="Confirmar Senha" tabindex="6">
+                            </div>
+                          </div>
+                        </div>
+                              <hr class="colorgraph">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                              <input type="submit" name="finalizar" value="Confirmar Alterações" class="btn btn-primary btn-block btn-lg">
+                            </div>
+                          </div>
+                        </div>  
+                      </form>
+                        </div>
+                </div>
+            </div>
+          </div>
     <footer id="rodape">
           <div id="Rodape-Conteudo">
             <span class="textoRodape">
