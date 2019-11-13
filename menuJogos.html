@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jogos</title>
+    <link rel="icon" href="imgs/icone.png" type="image/x-icon">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+  	<link href="css/style.css" rel="stylesheet" type="text/css">
+  	<link href="css/jogos.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+  	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+  	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+  	<link href="css/bootstrap-4.2.1.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  	<header id="cabecalho" role="banner" class="isVisible">
+  		<div id="cabecalhoPrincipal">
+  			<div id="navegation">
+  				<nav class="mainNav">
+  					<div class="opcoes">
+  						<a href="index.html" title="A.I.STEIN" id="logo" class="opcoesNavegaveis">
+  							<img src="imgs/Logo-escrito-180-22.png" alt="A.I.STEIN">
+  						</a>
+  						<ul class="opcoesNavegaveis opcoesImportantes">
+  							<li  id="jogos">
+  								<a href="menuJogos.html" class="opcaoImportante">Jogos </a>
+  							</li>
+  							<li  id="publicações">
+  								<a href="menuConteudos.html" class="opcaoImportante">Publicações </a>
+  							</li>
+  							<li id="questionarios">
+  								<a href="menuQuestionario.html" class="opcaoImportante">Questionários </a>
+  							</li>
+  						</ul>
+  						<ul class="opcoesNavegaveis opcoesSecundarias">
+  							<li id="fac">
+  								<a href="FAQ.html" class="btn btn-link">Com Problemas? </a>
+  							</li>
+  							<li id="autores">
+  								<a href="sobreOsAutores.html" class="btn btn-link">Quem somos nós? </a>
+  							</li>
+  							<li id="logar">
+  								<button id="logar" onclick="document.getElementById('id01').style.display='block'" class="btn btn-link">Login</button>
+  								<div id="id01" class="w3-modal">
+  								    <div class="w3-modal-content">
+  								      <div class="w3-container">
+  								        <span onclick="document.getElementById('id01').style.	display='none'" class="w3-button w3-display-topright">&times;</span>
+  					                        <div class="col-md-12">
+  					                            <!--Adaptar para modificar o BD-->
+  					                        	<form role="form">
+  					                    			<h2>Fazer Login</h2>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-12 col-md-12">
+  					                    					<div class="form-group">
+  					                                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Digite seu Email" tabindex="1">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-12 col-md-12">
+  					                    					<div class="form-group">
+  					                    						<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  						                                <div class="col-xs-12 col-sm-12 col-md-12">
+  						                                    <div class="form-group">
+  						                                        <input type="submit" name="finalizar" value="Login" class="btn btn-primary btn-block btn-lg">
+  						                                    </div>
+  						                                </div>
+  					                            	</div>
+  					                    		</form>
+  					                        </div>
+  					                    </div>
+  					                </div>
+  								</div>
+  							</li>
+  							<li id="cadastrar">
+  								<button id="cadastrar" onclick="document.getElementById('id02').style.display='block'" class="btn btn-link">Cadastre-se</button>
+  								<div id="id02" class="w3-modal">
+  								    <div class="w3-modal-content">
+  									    <div class="w3-container">
+  									        <span onclick="document.getElementById('id02').style.	display='none'" class="w3-button w3-display-topright">&times;</span>
+  					                        <div class="col-md-12">
+  					                            <!--Adaptar para modificar o BD-->
+  					                        	<form role="form">
+  					                    			<h2>Crie sua Conta</h2>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-12 col-md-12">
+  					                    					<div class="form-group">
+  					                                            <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Nome de Usuário" tabindex="1">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                                            <input type="text" name="nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="2">
+  					                    					</div>
+  					                    				</div>
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                    						<input type="text" name="sobrenome" id="ultimo_name" class="form-control input-lg" placeholder="Último Nome" tabindex="3">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                    			<div class="form-group">
+  					                    				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4">
+  					                    			</div>
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                    						<input type="password" name="senha" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+  					                    					</div>
+  					                    				</div>
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                    						<input type="password" name="confirmarSenha" id="password_confirmation" class="form-control input-lg" placeholder="Confirmar Senha" tabindex="6">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  						                                <div class="col-xs-12 col-sm-12 col-md-12">
+  						                                    <div class="form-group">
+  						                                        <input type="submit" name="finalizar" value="Criar Conta" class="btn btn-primary btn-block btn-lg">
+  						                                    </div>
+  						                                </div>
+  					                            	</div>
+  					                    		</form>
+  					                        </div>
+  					                    </div>
+  					                </div>
+  				                </div>
+  							</li>
+  						</ul>
+  						<a href="paginaPerfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
+  							<img src="imgs/usuario.png">
+  						</a>
+  					</div>
+  				</nav>
+  			</div>
+  		</div>
+  	</header>
+  	<div class="">
+      <span id="nomeJogo">Nome do Jogo</span>
+      <span id="pesquisarJogo">Pesquisar Jogo</span>
+      <div id="telaJogo" class="">
+          <svg width="100%" height="100%" id="svgId">
+            <circle id="sol" cx="540" cy="360" r="50" stroke="black" stroke-width="3" fill= "yellow"/>
+          </svg>
+      </div>
+    </div>
+  </body>
+  <script src="js/FrontToBack.js"></script>
+  <script src="js/Jogos/jogo.js"></script>>
+  <script src="js/Materia/materia.js"></script>
+  <script src="js/Jogos/buscarJogos.js"></script>
+</html>

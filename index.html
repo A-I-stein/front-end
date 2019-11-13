@@ -4,15 +4,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=1024" />
-	<title>index.html</title>
+	<title>A.I.Stein</title>
 	<link rel="icon" href="imgs/icone.png" type="image/x-icon" />
-	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
 	<link href="css/bootstrap-4.2.1.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/AlterarPerfil.css">
 	<style media="screen">
 		@import "css/fonts/stylesheet.css";
 	</style>
@@ -28,34 +27,28 @@
 						</a>
 						<ul class="opcoesNavegaveis opcoesImportantes">
 							<li  id="jogos">
-								<a href="jogos.html" class="opcaoImportante">Jogos </a>
-							</li>
-							<li id="curiosidades">
-								<a href="curiosidades.html" class="opcaoImportante">Curiosidades </a>
-							</li>
-							<li id="questionarios">
-								<a href="questionario.html" class="opcaoImportante">Questionários </a>
+								<a href="menuJogos.html" class="opcaoImportante">Jogos </a>
 							</li>
 							<li  id="publicações">
-								<a href="publicações.hmtl" class="opcaoImportante">Publicações </a>
+								<a href="menuConteudos.html" class="opcaoImportante">Publicações </a>
+							</li>
+							<li id="questionarios">
+								<a href="menuQuestionario.html" class="opcaoImportante">Questionários </a>
 							</li>
 						</ul>
 						<ul class="opcoesNavegaveis opcoesSecundarias">
 							<li id="fac">
-								<a href="faq.html" class="btn btn-link">Com Problemas? </a>
+								<a href="FAQ.html" class="btn btn-link">Com Problemas? </a>
 							</li>
 							<li id="autores">
-								<a href="sobre.html" class="btn btn-link">Quem somos nós? </a>
-							</li>
-							<li id="contato">
-								<a href="/contato" class="btn btn-link">Contacte-nos </a>
+								<a href="sobreOsAutores.html" class="btn btn-link">Quem somos nós? </a>
 							</li>
 							<li id="logar">
 								<button id="logar" onclick="document.getElementById('id01').style.display='block'" class="btn btn-link">Login</button>
 								<div id="id01" class="w3-modal">
 								    <div class="w3-modal-content">
 								      <div class="w3-container">
-								        <span onclick="document.getElementById('id01').style.	display='none'" class="w3-button w3-display-topright">&times;</span>							
+								        <span onclick="document.getElementById('id01').style.	display='none'" class="w3-button w3-display-topright">&times;</span>
 					                        <div class="col-md-12">
 					                            <!--Adaptar para modificar o BD-->
 					                        	<form role="form">
@@ -86,7 +79,7 @@
 					                    		</form>
 					                        </div>
 					                    </div>
-					                </div>							            	
+					                </div>
 								</div>
 							</li>
 							<li id="cadastrar">
@@ -94,7 +87,7 @@
 								<div id="id02" class="w3-modal">
 								    <div class="w3-modal-content">
 									    <div class="w3-container">
-									        <span onclick="document.getElementById('id02').style.	display='none'" class="w3-button w3-display-topright">&times;</span>			
+									        <span onclick="document.getElementById('id02').style.	display='none'" class="w3-button w3-display-topright">&times;</span>
 					                        <div class="col-md-12">
 					                            <!--Adaptar para modificar o BD-->
 					                        	<form role="form">
@@ -106,7 +99,7 @@
 					                                            <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Nome de Usuário" tabindex="1">
 					                    					</div>
 					                    				</div>
-					                    			</div>	
+					                    			</div>
 					                    			<div class="row">
 					                    				<div class="col-xs-12 col-sm-6 col-md-6">
 					                    					<div class="form-group">
@@ -146,10 +139,10 @@
 					                        </div>
 					                    </div>
 					                </div>
-				                </div>        
+				                </div>
 							</li>
 						</ul>
-						<a href="perfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
+						<a href="paginaPerfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
 							<img src="imgs/usuario.png">
 						</a>
 					</div>

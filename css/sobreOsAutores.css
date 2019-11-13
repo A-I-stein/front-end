@@ -1,0 +1,127 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+section {
+  min-width: 100vw;
+  height: 100%;
+}
+#logoSobreImagem{
+  position: absolute;
+  height: 40vh;
+  width: 73vh;
+  top: 16vh;
+  left: 28vw;
+}
+#imagemSobreAIStein{
+  position: relative;
+  height: 40vh;
+  width: 47vh;
+  left: 36vw;
+  margin-top: 13vh;
+}
+#imagemSobreArthur{
+  height: 40vh;
+  width: 40vh;
+  margin-right: 15vw;
+  padding-right: 0vw;
+  margin-top: 15vh;
+  float: right;
+  border-radius: 25vh;
+}
+#imagemSobreGabriel{
+  height: 40vh;
+  width: 40vh;
+  margin-left: 15vw;
+  margin-top: 15vh;
+  float: left;
+  border-radius: 25vh;
+}
+#imagemSobreHeitor{
+  height: 40vh;
+  width: 40vh;
+  margin-right: 15vw;
+  padding-right: 0vw;
+  margin-top: 15vh;
+  float: right;
+  border-radius: 25vh;
+}
+#imagemSobreItalo{
+  height: 40vh;
+  width: 40vh;
+  margin-left: 15vw;
+  margin-top: 15vh;
+  float: left;
+  border-radius: 25vh;
+}
+#sobreImagem{
+  box-shadow: 0 0 1em black;
+  background-color: #6c84afba;
+  height: 88vh;
+}
+#sobreAIStein{
+  border-top-style: groove;
+  border-color: grey;
+  background-color: #f3f2f1;
+}
+#sobreArthur{
+  box-shadow: 1em 0em 1em black;
+  background-color: #658394;
+  margin-bottom: 51vh;
+  }
+#sobreGabriel{
+  box-shadow: inset 0em 0em 1em 0em black;
+  background-color: #658394;
+  margin-bottom: 51vh;
+  }
+#sobreHeitor{
+  box-shadow: 0 0 1em black;
+  background-color: #658394;
+  margin-bottom: 51vh;
+  }
+#sobreItalo{
+  box-shadow: inset 0em 0em 1em 0em black;
+  background-color: #658394;
+  }
+
+.conteudoRowBottom{
+  width: 70vw;
+  position: relative;
+  left: 16vw;
+  padding-top: 12vh;
+}
+.conteudoRowLeft{
+  width: 24vw;
+  position: relative;
+  left: 16vw;
+  padding-top: 25vh;
+}
+.conteudoRowRight{
+  width: 66vw;
+  position: relative;
+  right: -17vw;
+  padding-top: 21vh;
+}
+.AISteisnConteudo{
+  min-width: 100vw;
+  height: 100%;
+}
+.conteudoSobre{
+  top: 80vh;
+  display: block;
+  min-width: 100vw;
+  height: 100%;
+  transition: all 1s;
+  position: relative;
+  z-index: 1;
+}
+.imagemPrincipal{
+  top: 7vh;
+  position: fixed;
+  z-index: 1;
+}

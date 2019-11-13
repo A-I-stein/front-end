@@ -1,7 +1,14 @@
-.conteudo{
+body{
   position: relative;
-  top: 6em;
-/*  display: flex;*/
+  background: url(../imgs/gifFundo_2.gif);
+}
+.conteudo{
+  width: 1024px;
+  background-color: rgba(243, 242, 241, 0.999999);
+  margin: 0;
+  position: absolute;
+  top: 10em;
+  left: 25%;
 }
 .generos{
   border-style: groove;
@@ -34,7 +41,7 @@ span[name='genero'] > h2{
 }
 span[name='separacao']{
   display: flex;
-  width: 95vw;
+  width: 100%;
   border-style: groove;
 }
 h6{

@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6, a, li, ul{
 
 .opcoesNavegaveis{
 	margin-top: 1%;
-	padding-left: 5%;
+	padding-left: 3%;
 	text-align: left;
 	font-variant: small-caps;
 	display: block;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, a, li, ul{
 
 
 #cabecalhoPrincipal {
-	max-width: 990px;
+	max-width: 1010px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 15px;
@@ -145,3 +145,64 @@ h1, h2, h3, h4, h5, h6, a, li, ul{
   	color: #FAFAFA;
 	font-variant: small-caps;
 }
+
+
+#leftPanel{
+background-color:#0079ac;
+color:#fff;
+text-align: center;
+}
+
+#rightPanel{
+    min-height:415px;
+}
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #6c84afba;
+  border-radius: 5px;
+<<<<<<< HEAD
+}
+#loginPanel{
+text-align: center;
+}
+.btn-index{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: transparent;
+  color: #aaa;
+}
+.w3-modal{
+	z-index:3;
+	display:none;
+	padding-top:100px;
+	position:fixed;left:0;
+	top:0;width:100%;
+	height:100%;
+	overflow:auto;
+	background-color:#6c84afba;
+	background-color:rgba(0,0,0,0.4);
+}
+.w3-modal-content{
+	margin:auto;
+	background-color:#6c84afba;
+	position:relative;
+	padding:0;
+	outline:0;
+	width:600px
+}
+.w3-container,.w3-panel{
+	padding:0.01em 16px
+	}
+.w3-panel{
+	margin-top:16px;
+	margin-bottom:16px
+}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+@media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
+@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+=======
+}
+>>>>>>> master
