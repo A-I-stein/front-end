@@ -64,6 +64,11 @@ function finalizarQuestionario() {
     }
   }
   console.log(acertos);
+  document.querySelector(".questoes").style.display = "none";
+  document.querySelector(".resultadoFinal").style.display = "block";
+  document.querySelector("#acertos").innerHTML = "Voce acertou "
+    + acertos + " de 10 questões!"
+  console.log(acertos);
 
 }
 
@@ -83,8 +88,10 @@ let botaoIniciarQuestionario = document.getElementsByName("botaoIniciarQuestiona
     botaoProximaQuestao = document.getElementsByName("proximaQuestao"),
     botaoRetornarQuestao = document.getElementsByName("retornarQuestao"),
     botaoFinalizarQuestionario = document.getElementsByName("finalizar"),
+    botaoAbreMenu = document.getElementsByName("retornarMenu"),
     respostaEscolhida = document.getElementsByName("Resposta"),
         escolha = null;
+        console.log(botaoFinalizarQuestionario);
 
 
 
@@ -131,7 +138,8 @@ let botaoIniciarQuestionario = document.getElementsByName("botaoIniciarQuestiona
 
       })
 
-      botaoFinalizarQuestionario[0].addEventListener("click", function(){
+      botaoFinalizarQuestionario[2].addEventListener("click", function(){
+
         for (var i = 0; i < respostaEscolhida.length; i++) {
           if (respostaEscolhida[i].checked) {
             escolha = respostaEscolhida[i].value;
@@ -141,5 +149,12 @@ let botaoIniciarQuestionario = document.getElementsByName("botaoIniciarQuestiona
         vetorRespostasSalvas[contador] = escolha;
         finalizarQuestionario();
         console.log(vetorRespostasSalvas);
+      })
+      botaoAbreMenu[0].addEventListener("click", function(){
+        vetorQuestoes = [];
+        vetorRespostasSalvas = [];
+        contador = 0;
+        document.querySelector(".modalEscolha").style.display = "block";
+        document.querySelector(".resultadoFinal").style.display = "none";
       })
   })

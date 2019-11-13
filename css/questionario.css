@@ -1,9 +1,28 @@
+body{
+
+  background-image: url(../imgs/gifFundo_4.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #0e1235;
+}
 .conteudo{
   position: relative;
   top: 4em;
   height: 100%;
   width: 98%;
   left: 0.6em;
+  background-color: rgba(243, 242, 241, 0.1);
+}
+.modalEscolha{
+  position: fixed;
+  top: 38vh;
+  left: 36vw;
+  border-style: ridge;
+  border-radius: 0.2em;
+  padding: 1em;
+  display: block;
+  background-color: rgba(243, 242, 241, 0.999999);
+  border-radius: 1.2em;
 }
 .respostas{
   display: table-caption;
@@ -77,6 +96,9 @@ input[name='cancelar']:active {
   border-style: ridge;
   position: absolute;
   top: 3em;
+  background-color: rgba(243, 242, 241, 0.999999);
+  margin-bottom: 3em;
+  width: 100%;
 }
 span[name='respDescricao']{
   color: black;
@@ -90,9 +112,10 @@ label[name='pergunta']{
 button[name='botaoIniciarQuestionario'],
 button[name='proximaQuestao'],
 button[name='retornarQuestao'],
-button[name='finalizar']{
+button[name='finalizar'],
+button[name='retornarMenu']{
   box-shadow: inset -3px -3px 3px -1px #ffffff;
-  background-color: #6c84afba;
+  background-color: #9db4e0e6;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -115,22 +138,31 @@ button[name='finalizar']{
 button[name='botaoIniciarQuestionario']:hover,
 button[name='proximaQuestao']:hover,
 button[name='retornarQuestao']:hover,
-button[name='finalizar']:hover {
+button[name='finalizar']:hover,
+button[name='retornarMenu']:hover {
 	background-color:#dfdfdf;
 }
 button[name='botaoIniciarQuestionario']:active,
 button[name='proximaQuestao']:active,
 button[name='retornarQuestao']:active,
-button[name='finalizar']:active {
+button[name='finalizar']:active,
+button[name='retornarMenu']:active {
 	position:relative;
 	top:1px;
 }
-.modalEscolha{
-  position: fixed;
-  top: 38vh;
-  left: 36vw;
-  border-style: ridge;
-  border-radius: 0.2em;
-  padding: 1em;
+.resultadoFinal{
+  display: none;
+  position: relative;
+  top: 8em;
+  left: 33%;
+  background-color: rgba(243, 242, 241, 0.999999);
+  border-radius: 1.2em;
+  height: 8em;
+  width: 40em;
+}
+.pergunta ul{
+  width: 100vw;
+}
+.pergunta li{
   display: block;
 }
