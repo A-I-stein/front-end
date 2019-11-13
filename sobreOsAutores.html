@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title>Quem somos Nós?</title>
+    <link rel="icon" href="imgs/icone.png" type="image/x-icon" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/sobreOsAutores.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    @import url("fonts/stylesheet.css");
+    </style>
+    <link href="css/bootstrap-4.2.1.css" rel="stylesheet" type="text/css">
+    <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+    <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+  </head>
+  <body>
+  	<header id="cabecalho" role="banner" class="isVisible">
+  		<div id="cabecalhoPrincipal">
+  			<div id="navegation">
+  				<nav class="mainNav">
+  					<div class="opcoes">
+  						<a href="index.html" title="A.I.STEIN" id="logo" class="opcoesNavegaveis">
+  							<img src="imgs/Logo-escrito-180-22.png" alt="A.I.STEIN">
+  						</a>
+  						<ul class="opcoesNavegaveis opcoesImportantes">
+  							<li  id="jogos">
+  								<a href="menuJogos.html" class="opcaoImportante">Jogos </a>
+  							</li>
+  							<li  id="publicações">
+  								<a href="menuConteudos.html" class="opcaoImportante">Publicações </a>
+  							</li>
+  							<li id="questionarios">
+  								<a href="menuQuestionario.html" class="opcaoImportante">Questionários </a>
+  							</li>
+  						</ul>
+  						<ul class="opcoesNavegaveis opcoesSecundarias">
+  							<li id="fac">
+  								<a href="FAQ.html" class="btn btn-link">Com Problemas? </a>
+  							</li>
+  							<li id="autores">
+  								<a href="sobreOsAutores.html" class="btn btn-link">Quem somos nós? </a>
+  							</li>
+  							<li id="logar">
+  								<button id="logar" onclick="document.getElementById('id01').style.display='block'" class="btn btn-link">Login</button>
+  								<div id="id01" class="w3-modal">
+  								    <div class="w3-modal-content">
+  								      <div class="w3-container">
+  								        <span onclick="document.getElementById('id01').style.	display='none'" class="w3-button w3-display-topright">&times;</span>
+  					                        <div class="col-md-12">
+  					                            <!--Adaptar para modificar o BD-->
+  					                        	<form role="form">
+  					                    			<h2>Fazer Login</h2>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-12 col-md-12">
+  					                    					<div class="form-group">
+  					                                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Digite seu Email" tabindex="1">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-12 col-md-12">
+  					                    					<div class="form-group">
+  					                    						<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  						                                <div class="col-xs-12 col-sm-12 col-md-12">
+  						                                    <div class="form-group">
+  						                                        <input type="submit" name="finalizar" value="Login" class="btn btn-primary btn-block btn-lg">
+  						                                    </div>
+  						                                </div>
+  					                            	</div>
+  					                    		</form>
+  					                        </div>
+  					                    </div>
+  					                </div>
+  								</div>
+  							</li>
+  							<li id="cadastrar">
+  								<button id="cadastrar" onclick="document.getElementById('id02').style.display='block'" class="btn btn-link">Cadastre-se</button>
+  								<div id="id02" class="w3-modal">
+  								    <div class="w3-modal-content">
+  									    <div class="w3-container">
+  									        <span onclick="document.getElementById('id02').style.	display='none'" class="w3-button w3-display-topright">&times;</span>
+  					                        <div class="col-md-12">
+  					                            <!--Adaptar para modificar o BD-->
+  					                        	<form role="form">
+  					                    			<h2>Crie sua Conta</h2>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-12 col-md-12">
+  					                    					<div class="form-group">
+  					                                            <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Nome de Usuário" tabindex="1">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                                            <input type="text" name="nome" id="primeiro_nome" class="form-control input-lg" placeholder="Primeiro Nome" tabindex="2">
+  					                    					</div>
+  					                    				</div>
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                    						<input type="text" name="sobrenome" id="ultimo_name" class="form-control input-lg" placeholder="Último Nome" tabindex="3">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                    			<div class="form-group">
+  					                    				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Endereço de Email" tabindex="4">
+  					                    			</div>
+  					                    			<div class="row">
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                    						<input type="password" name="senha" id="password" class="form-control input-lg" placeholder="Senha" tabindex="5">
+  					                    					</div>
+  					                    				</div>
+  					                    				<div class="col-xs-12 col-sm-6 col-md-6">
+  					                    					<div class="form-group">
+  					                    						<input type="password" name="confirmarSenha" id="password_confirmation" class="form-control input-lg" placeholder="Confirmar Senha" tabindex="6">
+  					                    					</div>
+  					                    				</div>
+  					                    			</div>
+  					                                <hr class="colorgraph">
+  					                    			<div class="row">
+  						                                <div class="col-xs-12 col-sm-12 col-md-12">
+  						                                    <div class="form-group">
+  						                                        <input type="submit" name="finalizar" value="Criar Conta" class="btn btn-primary btn-block btn-lg">
+  						                                    </div>
+  						                                </div>
+  					                            	</div>
+  					                    		</form>
+  					                        </div>
+  					                    </div>
+  					                </div>
+  				                </div>
+  							</li>
+  						</ul>
+  						<a href="paginaPerfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
+  							<img src="imgs/usuario.png">
+  						</a>
+  					</div>
+  				</nav>
+  			</div>
+  		</div>
+  	</header>
+  	<div class="imagemPrincipal">
+      <section id="sobreImagem" class="sobreSections">
+          <img id="logoSobreImagem"src="imgs/gifFundo_1.gif" alt="A.I.STEIN">
+      </section>
+    </div>
+    <div class="conteudoSobre">
+      <section id="sobreAIStein" class="sobreSections">
+        <div class="AISteisnConteudo">
+          <img id="imagemSobreAIStein"src="imgs/Logo-sem_cor.png" alt="A.I.STEIN">
+          <div class="conteudoRowBottom">
+            <p>O A.I.Stein, ou Projeto A.I.Stein, é uma plataforma de ensino criada para facilitar a democratização do ensino da ciência que estuda desde os grandes astros do universo até as pequenas ações cotidianas que tornam a vida possível.</p>
+            <p>Devido ao fato de muitos estudantes não conseguirem entender algo apenas lendo-o uma vez, o A.I.Stein busca transmitir conhecimentos por maneira mais dinâmicas, como por jogos, questionários, curiosidades e publicações de outros usuários.</p>
+          </div>
+        </div>
+      </section>
+      <section id="sobreArthur" class="sobreSections">
+        <img id="imagemSobreArthur"src="imgs/arthurMarcolino.jpg" alt="A.I.STEIN">
+        <div class="conteudoRowLeft">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+      <section id="sobreGabriel" class="sobreSections">
+        <img id="imagemSobreGabriel"src="imgs/gabrielCruz.jpg" alt="A.I.STEIN">
+        <div class="conteudoRowRight">
+          <p>Gabriel Gomes Altino Alves Cruz, ou apenas Gabriel Cruz, é um estudante do curso técnico do CEFET-MG. Foi responsável pelo planejamento do Banco de Dados, co-responsável pelo back-end e responsável pelo design de algumas páginas.</p>
+        </div>
+      </section>
+      <section id="sobreHeitor" class="sobreSections">
+        <img id="imagemSobreHeitor"src="imgs/heitorSantos.jpg" alt="A.I.STEIN">
+        <div class="conteudoRowLeft">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+      <section id="sobreItalo" class="sobreSections">
+        <img id="imagemSobreItalo"src="imgs/italoFideles.jpg" alt="A.I.STEIN">
+        <div class="conteudoRowRight">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+    </div>
+    <footer id="rodape">
+      <div id="Rodape-Conteudo">
+        <span class="textoRodape">
+          Projeto A.I.Stein 2019 - CEFET-MG, Brasil
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

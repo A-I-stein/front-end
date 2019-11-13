@@ -253,9 +253,9 @@
 	height: 66px;
 	padding-top: 70px;
 	background: #ffffff;
-	background: -moz-linear-gradient(top,  #c1c1c1 0%, #f3f2f1 64%); 
-	background: -webkit-linear-gradient(top,  #c1c1c1 0%,#f3f2f1 64%); 
-	background: linear-gradient(to bottom,  #c1c1c1 0%,#f3f2f1 64%); 
+	background: -moz-linear-gradient(top,  #c1c1c1 0%, #f3f2f1 64%);
+	background: -webkit-linear-gradient(top,  #c1c1c1 0%,#f3f2f1 64%);
+	background: linear-gradient(to bottom,  #c1c1c1 0%,#f3f2f1 64%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1c1c1', endColorstr='#ffffff',GradientType=0 );
 }
 .slogan{
