@@ -1,6 +1,6 @@
 /*
-* Classe objeto para a encapsulação de dados do Patrimonio.
- * @author Italo Fideles
+*
+ * @author Arthur
 */
 
 class Jogo{

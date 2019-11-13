@@ -1,7 +1,7 @@
 
 window.onload = function(e){
 
-  function addOrbita(planeta, solCSS) {
+  function addOrbita(planeta,  textos, solCSS) {
   let distancia = distanciaCentro(planeta, solCSS);
   console.log(distancia);
     if (solCSS === 0) {
@@ -41,7 +41,17 @@ window.onload = function(e){
       if (!start) start = timestamp;
       var progress = timestamp - start;
         planeta.style.cx = Math.cos(cont) * distancia  + parseInt(solCSS.cx) + "px";
-        planeta.style.cy = Math.sin(cont) * distancia + parseInt(solCSS.cy) + "px";
+        planeta.style.cy = Math.sin(cont) * distancia  + parseInt(solCSS.cy) + "px";
+
+        let x = getComputedStyle(textos).length;
+      //  console.log(x);
+
+        let auxX = Math.cos(cont) * distancia  + parseInt(solCSS.cx) + "px";
+        let auxY = Math.sin(cont) * distancia  + parseInt(solCSS.cy) + "px";
+
+        textos.setAttribute("x", auxX);
+        textos.setAttribute("y", auxY);
+
        window.requestAnimationFrame(step);
     }
 
@@ -62,73 +72,134 @@ window.onload = function(e){
 
   }
 
-  var planetas = document.querySelectorAll(".planeta");
+
+function buscarMateriaTodas(fn){
+    let conexao = Request.get("req=buscarTodos", "MateriaServlet");
+    conexao.then(function(resultado){
+      for (var i = 0; i < JSON.parse(resultado).length; i++) {
+          fn(new Materia(JSON.parse(resultado)[i]));
+      }
+    });
+  }
+
+let svgPag = document.querySelector("#svgId");
+
+buscarMateriaTodas(function(planetas) {
+  let circles = [];
+  circles.push(new Circle(planetas));
+  desenharCircles(circles, svgPag);
+});
+
+function desenharCircles(vetor, svg) {
+  var circulo;
+  var texto;
+  let auxX;
+  let auxY;
+  for (var i = 0; i < vetor.length; i++) {
+    circulo = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    circulo.setAttribute("cx",vetor[i].cx);
+    circulo.setAttribute("cy",vetor[i].cy);
+    circulo.setAttribute("r",vetor[i].r);
+    circulo.setAttribute("stroke",vetor[i].stroke);
+    circulo.setAttribute("stroke-width",vetor[i].strokeWidth);
+    circulo.setAttribute("id", "planeta");
+    circulo.setAttribute("filter", vetor[i].filter);
+    // text.setAttribute("x", auxX);
+    // text.setAttribute("y", auxY);
+    text.setAttribute("stroke", "white");
+    text.setAttribute("stroke-width", 0.2);
+    text.setAttribute("id", "materiaNome");
+    text.innerHTML = vetor[i].nameCircle;
+    svg.appendChild(circulo);
+    svg.appendChild(text);
+  }
+  circulo = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  circulo.setAttribute("cx", 540);
+  circulo.setAttribute("cy", 360);
+  circulo.setAttribute("filter", "url(#fisicaIcon)");
+  circulo.setAttribute("r", 50);
+  circulo.setAttribute("stroke", "black");
+  circulo.setAttribute("stroke-width", "3");
+  circulo.setAttribute("id", "sol");
+  svg.appendChild(circulo);
+}
+
+
+setTimeout(function () {
+  var planetas = document.querySelectorAll("#planeta");
+  var textos = document.querySelectorAll("#materiaNome");
   var satelites = document.querySelectorAll(".satelite");
   var orbita = document.querySelectorAll(".orbita");
   var sol = document.querySelector("#sol");
-  sol.style.position = "absolute";
-  sol.style.zIndex = "1";
-
-  var planetasCSS = [];
-  for (var i = 0; i < planetas.length; i++) {
-    planetasCSS[i] = (window.getComputedStyle(planetas[i]));
-    planetas[i].style.cursor = "pointer";
-    orbita[i].style.cursor = "pointer";
-    orbita[i].addEventListener('mouseover', function(e) {
-      //console.log(e.path[0].style.stroke);
-      if (e.path[0].style.stroke == "rgb(0, 147, 255)") {
-        e.path[0].style.stroke = "rgba(0, 147, 255, 0.1)";
-      }else if (e.path[0].style.stroke == "rgba(0, 147, 255, 0.1)" || e.path[0].style.stroke == "" ){
-        e.path[0].style.stroke = "rgba(0, 147, 255, 1)";
-      }
-    });
-    orbita[i].addEventListener('mouseout', function(e) {
-      //console.log(e.path[0].style.stroke);
-      if (e.path[0].style.stroke == "rgb(0, 147, 255)") {
-        e.path[0].style.stroke = "rgba(0, 147, 255, 0.1)";
-      }else if (e.path[0].style.stroke == "rgba(0, 147, 255, 0.1)" || e.path[0].style.stroke == "" ){
-        e.path[0].style.stroke = "rgba(0, 147, 255, 1)";
-      }
-    });
-  }
-
-
-
-
-
-
-//var satelitesCSS = document.querySelectorAll(satelites); --IMPORTANTE
   var solCSS = window.getComputedStyle(sol);
 
+  console.log(planetas);
 
   for (var i = 0; i < planetas.length; i++) {
-    addOrbita(planetas[i], solCSS);
-  }
+      addOrbita(planetas[i], textos[i], solCSS);
+      console.log( "#"+((1<<24)*Math.random()|0).toString(16));
+   }
+}, 15);
 
-  for (var i = 0; i < satelites.length; i++) {
-    addOrbita(satelites[i], planetasCSS[i]);
-  }
+//   var planetasCSS = [];
+//   for (var i = 0; i < planetas.length; i++) {
+//     planetasCSS[i] = (window.getComputedStyle(planetas[i]));
+//     planetas[i].style.cursor = "pointer";
+//     orbita[i].style.cursor = "pointer";
+//     orbita[i].addEventListener('mouseover', function(e) {
+//       //console.log(e.path[0].style.stroke);
+//       if (e.path[0].style.stroke == "rgb(0, 147, 255)") {
+//         e.path[0].style.stroke = "rgba(0, 147, 255, 0.1)";
+//       }else if (e.path[0].style.stroke == "rgba(0, 147, 255, 0.1)" || e.path[0].style.stroke == "" ){
+//         e.path[0].style.stroke = "rgba(0, 147, 255, 1)";
+//       }
+//     });
+//     orbita[i].addEventListener('mouseout', function(e) {
+//       //console.log(e.path[0].style.stroke);
+//       if (e.path[0].style.stroke == "rgb(0, 147, 255)") {
+//         e.path[0].style.stroke = "rgba(0, 147, 255, 0.1)";
+//       }else if (e.path[0].style.stroke == "rgba(0, 147, 255, 0.1)" || e.path[0].style.stroke == "" ){
+//         e.path[0].style.stroke = "rgba(0, 147, 255, 1)";
+//       }
+//     });
+//   }
+//
+//
+//
+//
+//
 
-  sol.style.cursor = "pointer";
-  sol.addEventListener('click', buscarJogo);
+//var satelitesCSS = document.querySelectorAll(satelites); --IMPORTANTE
+  //
+  //
+  //
+  //
+  //
+  // for (var i = 0; i < satelites.length; i++) {
+  //   addOrbita(satelites[i], planetasCSS[i]);
+  // }
+  //
+  // sol.style.cursor = "pointer";
+  // sol.addEventListener('click', buscarJogo);
 
-
-  function buscarJogo(){
-    let res = Request.get('req=buscarJogo')
-    window.setTimeout(
-      function() {
-        res.then(function(valor){
-          let frame = document.createElement("DIV");
-          frame.innerHTML = valor;
-          frame.style.position = "absolute";
-          frame.style.zIndex = "5";
-          document.body.appendChild(frame);
-          console.log(frame);
-        });
-        console.log(res);
-      }, Math.random() * 2000 + 1000);
-  }
-
+//
+//   function buscarJogo(){
+//     let res = Request.get('req=buscarJogo')
+//     window.setTimeout(
+//       function() {
+//         res.then(function(valor){
+//           let frame = document.createElement("DIV");
+//           frame.innerHTML = valor;
+//           frame.style.position = "absolute";
+//           frame.style.zIndex = "5";
+//           document.body.appendChild(frame);
+//           console.log(frame);
+//         });
+//         console.log(res);
+//       }, Math.random() * 2000 + 1000);
+//   }
+//
 
 
 

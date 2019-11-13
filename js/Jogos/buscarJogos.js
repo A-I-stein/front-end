@@ -28,6 +28,7 @@ function buscarMateriaId(id, fn){
 
 
 
+
 materiaParaJogo();
 
 
