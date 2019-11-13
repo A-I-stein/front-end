@@ -17,6 +17,7 @@ h1{
   position: absolute;
   top: 10em;
   left: 25%;
+  border-radius: 1.2em;
 }
 .generos{
   border-style: groove;
