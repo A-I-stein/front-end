@@ -27,13 +27,16 @@ span[name='genero'] > h2{
   text-decoration: underline;
 }
 .perguntas{
-  padding-left: 8em;
+  padding-left: 2em;
 }
 .perguntaResposta > h6{
   font-style: italic;
 }
 span[name='separacao']{
   display: flex;
-  width: 80vw;
+  width: 95vw;
   border-style: groove;
+}
+h6{
+  color: #999999;
 }
