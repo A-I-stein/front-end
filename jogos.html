@@ -6,6 +6,9 @@
     <link href="css/index.css" rel="stylesheet" type="text/css">
   	<link href="css/style.css" rel="stylesheet" type="text/css">
   	<link href="css/jogos.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="imgs/icone.png" type="image/x-icon">
+
   </head>
   <body>
     <header id="cabecalho" role="banner" class="isVisible">
@@ -15,40 +18,6 @@
   					<div class="opcoes">
   						<a href="index.html" title="A.I.STEIN" id="logo" class="opcoesNavegaveis">
   							<img src="imgs/Logo-escrito-180-22.png" alt="A.I.STEIN">
-  						</a>
-  						<ul class="opcoesNavegaveis opcoesImportantes">
-  							<li  id="jogos">
-  								<a href="jogos.html" class="opcaoImportante">Jogos </a>
-  							</li>
-  							<li id="curiosidades">
-  								<a href="curiosidades.html" class="opcaoImportante">Curiosidades </a>
-  							</li>
-  							<li id="questionarios">
-  								<a href="questionario.html" class="opcaoImportante">Questionários </a>
-  							</li>
-  							<li  id="publicações">
-  								<a href="publicações.hmtl" class="opcaoImportante">Publicações </a>
-  							</li>
-  						</ul>
-  						<ul class="opcoesNavegaveis opcoesSecundarias">
-  							<li id="fac">
-  								<a href="faq.html" class="opcaoSecundaria">Com Problemas? </a>
-  							</li>
-  							<li id="autores">
-  								<a href="sobre.html" class="opcaoSecundaria">Quem somos nós? </a>
-  							</li>
-  							<li id="contato">
-  								<a href="/contato" class="opcaoSecundaria">Contacte-nos </a>
-  							</li>
-  							<li id="logar">
-  								<a href="/logar" class="opcaoSecundaria oculto">Login </a>
-  							</li>
-  							<li id="cadastrar">
-  								<a href="cadastro.html" class="opcaoSecundaria oculto">Cadastre-se </a>
-  							</li>
-  						</ul>
-  						<a href="perfil.html" title="Foto de Perfil" id="fotoPerfil" class="opcoesNavegaveis">
-  							<img src="imgs/usuario.png">
   						</a>
   					</div>
   				</nav>
@@ -62,8 +31,6 @@
 
 
     <div class="">
-      <span id="nomeJogo">Nome do Jogo</span>
-      <span id="pesquisarJogo">Pesquisar Jogo</span>
       <div id="telaJogo" class="">
 
 
@@ -94,10 +61,30 @@
             </filter>
 
 
-
           </svg>
 
+
+
       </div>
+
+      <div class="telaPainelJogo">
+        <div id="divPainelJogo" class="modal posDivModal">
+          <button type="button" id="fecharModalPainel"> <img src="imgs/fechar.svg" alt="fechar" id="imgFecharButton"> </button>
+          <h2 id="tituloMateria"></h2>
+        <div id="divPainelJogo2">
+
+        </div>
+      </div>
+      </div>
+
+      <div class="modalJogo posDivModalJogo esconde" id="iframeJogoModal">
+        <button type="button" id="fecharModalJogo"> <img src="imgs/fechar.svg" alt="fechar" id="imgFecharButton2"> </button>
+        <button type="button" id="creditosJogoButton"> <img src="imgs/information.svg" alt="creditos" id="imgCreditosJogo"> </button>
+        <div id="iframeJogo">
+
+        </div>
+      </div>
+  <div id="idMascara" class="ocultar"></div>
     </div>
   </body>
   <script src="js/FrontToBack.js"></script>
@@ -105,5 +92,6 @@
   <script src="js/jogos.js"></script>
   <script src="js/Jogos/circle.js"></script>
   <script src="js/Jogos/jogo.js"></script>
+  <script src="js/Jogos/painelJogos.js"></script>
 
 </html>

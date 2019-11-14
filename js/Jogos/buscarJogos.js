@@ -9,6 +9,7 @@
 // var svg = document.querySelector("#svgId");
 
 
+
 function buscarTodosJogos(fn){
   let conexao = Request.get("req=buscarTodos", "JogoServlet");
   conexao.then(function(resultado){
@@ -17,6 +18,7 @@ function buscarTodosJogos(fn){
   }
   });
 }
+
 
 function buscarMateriaId(id, fn){
   let conexao = Request.get("req=buscarId&tipo=" + id, "MateriaServlet");

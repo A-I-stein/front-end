@@ -1,5 +1,92 @@
+header {
+	min-height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	background: linear-gradient(rgba(0,11,65,0.25), rgba(0,11,65,0.91)), url(../imgs/ceu-estrelado.gif);
+	background-size: cover;
+	z-index: 5;
+}
+
+
+#idMascara {
+  position: fixed;
+  z-index: 3;
+  background-color: #000;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ocultar{
+	display: none;
+}
+
+:root {
+  --brancoIvory: #FDFCF3;
+  --verdeCamarone: #1D883A; /* Verde Claro */
+  --verdeCrusoe: #126624; /* Verde Escuro */
+  --pretoNight: #AAA9A4;
+  --cinzaFoggy: #2D2D2E;
+}
+
+
 #nomeJogo{
   border: solid black 1px;
+}
+
+body{
+  background-image: url("../imgs/ceu-estrelado2.gif");
+}
+
+#fecharModalPainel{
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+  float: right;
+  margin-top: 15px;
+  left: 11%;
+}
+
+#fecharModalJogo{
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+  float: right;
+  margin-top: 15px;
+  left: 18%;
+}
+
+#creditosJogoButton{
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+  float: right;
+  margin-top: 65px;
+  left: 50%;
+}
+
+
+#fecharModalPainel img{
+  width: 20%;
+  cursor: pointer;
+}
+
+#fecharModalJogo img{
+  width: 10%;
+  cursor: pointer;
+}
+
+#creditosJogoButton img{
+  width: 15%;
+  cursor: pointer;
 }
 
 #pesquisarJogo{
@@ -10,19 +97,91 @@
   border: solid black 1px;
   width: 100%;
   height: 100%;
-   min-height: 100%;
   position: absolute;
   z-index: 0;
+  font-family: 'Bree Serif', serif;
 }
 
 
+.telaPainelJogo{
+  height: 100%;
+  position:  absolute;
+  top: 0%;
+  left: 55%;
+}
 
 html{
   height: 100%;
 }
 
-#botaoTeste{
-  position: absolute;
-  top: 38%;
-  left: 26%;
+#tituloMateria{
+  font-family: 'Bree Serif', serif;
+}
+
+#divPainelJogo input{
+  display: block;
+  margin-bottom: 0.5em;
+  width: 95%;
+}
+
+#divPainelJogo button{
+  width: 32%;
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#divPainelJogo {
+ text-align: left;
+ padding: 0.8em;
+ color: black !important;
+ top: -50%;
+}
+
+#divPainelJogo, #divPainelJogo2, #iframeJogoModal, #iframeJogo{
+ transition: opacity 0.5s, top 2s;
+}
+
+
+
+#divMascara {
+  position: fixed;
+  z-index: 3;
+  background-color: #000;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+  width: 40em;
+  left: calc(55vw);
+  top: calc(10vh);
+  background-color: var(--brancoIvory);
+  border-radius: 1em;
+}
+
+.posDivModal {
+  z-index: 4;
+  position: fixed;
+}
+
+
+.modalJogo {
+  width: 60em;
+  left: calc(25vw);
+  top: calc(10vh);
+  background-color: var(--brancoIvory);
+  border-radius: 1em;
+}
+
+.posDivModalJogo {
+  z-index: 4;
+  position: fixed;
+}
+
+.esconde{
+  display: none;
 }

@@ -8,40 +8,41 @@ class Circle{
         constructor(vetor){
               this.codId      = vetor.codMateria;
               this.nameCircle = vetor.nomeMateria;
+              this.codImg = vetor.codImg;
               switch (vetor.codMateria) {
                 case 0:
-                this.cx  =  590;
-                this.cy  =  410;
+                this.cx  =  screen.height/2.05;
+                this.cy  =  screen.width/5.4;
                 this.filter = "url(#movimentoIcon)";
                 break;
                 case 1:
-                this.cx  =  620;
-                this.cy  =  440;
+                this.cx  =  screen.height/1.8;
+                this.cy  =  screen.width/5.4;
                 this.filter = "url(#ondaIcon)";
                 break;
                 case 2:
-                this.cx  =  655;
-                this.cy  =  475;
+                this.cx  =  screen.height/1.62;
+                this.cy  =  screen.width/5.4;
                 this.filter = "url(#trabalhoIcon)";
                 break;
                 case 3:
-                this.cx  =  705;
-                this.cy  =  525;
+                this.cx  =  screen.height/1.48;
+                this.cy  =  screen.width/5.4;
                 this.filter = "url(#calorIcon)";
                 break;
                 case 4:
-                this.cx  =  775;
-                this.cy  =  595;
+                this.cx  =  screen.height/1.37;
+                this.cy  =  screen.width/5.4;
                 this.filter = "url(#quanticaIcon)";
                 break;
                 case 5:
-                this.cx  =  840;
-                this.cy  =  660;
+                this.cx  =  screen.height/1.28;
+                this.cy  =  screen.width/5.4;
                 this.filter = "url(#radiacaoIcon)";
                 break;
                 case 6:
-                this.cx  =  900;
-                this.cy  =  720;
+                this.cx  =  screen.height/1.20;
+                this.cy  =  screen.width/5.4;
                 this.filter = "url(#eletromagIcon)";
                 break;
                 default:
