@@ -1,8 +1,17 @@
 /*
-*
- * @author Arthur
+* Projeto de Integração - A.I.Stein
+* CEFET-MG
+* INF-3A 2019
+* Arthut Marcolino, Gabriel Cruz, Heitor Santos, Italo Nascimento
 */
 
+
+
+/*
+*
+* @author Arthur Marcolino
+*
+*/
 class Circle{
 
         constructor(vetor){

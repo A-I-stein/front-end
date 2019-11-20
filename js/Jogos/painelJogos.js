@@ -1,3 +1,18 @@
+/*
+* Projeto de Integração - A.I.Stein
+* CEFET-MG
+* INF-3A 2019
+* Arthut Marcolino, Gabriel Cruz, Heitor Santos, Italo Nascimento
+*/
+
+
+
+/*
+*
+* @author Arthur Marcolino
+*
+*/
+
 let telaPainelJogo = document.querySelectorAll(".telaPainelJogo")[0];
 let divPainelJogo = document.querySelector("#divPainelJogo");
 let divPainelJogo2 = document.querySelector("#divPainelJogo2");

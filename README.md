@@ -11,7 +11,7 @@ A.I.stein é um projeto de uma aplicação web voltada ao ensino de física e di
 Não há necessidade de instalar nada e o serviço se destina apenas a fins educativos, ou seja, não pretende lucrar.
 
 ```
-AIstein.com.br
+AIstein.com.br (Dominio ainda não foi comprado.)
 ```
 
 ## Built With
