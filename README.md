@@ -6,7 +6,9 @@ A.I.stein - Physics Web Application
 
 A.I.stein é um projeto de uma aplicação web voltada ao ensino de física e divulgação cientifica, com jogos, questionários e criação de conteúdo.
 
-[![Vídeo do site em funcionamento | Versão 1.0](https://i.imgur.com/MAqEqwo.png)](https://www.youtube.com/watch?v=OaWVB4nss34)
+Vídeo:
+
+[![Vídeo do site em funcionamento | Versão 1.0](https://i.imgur.com/FvKr2KX.png)](https://www.youtube.com/watch?v=OaWVB4nss34)
 
 ### Prerequisites
 
